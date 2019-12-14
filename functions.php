@@ -161,11 +161,11 @@ function obulma_scripts() {
 
 	wp_enqueue_style( 'obulma-font-awesome', get_template_directory_uri() . '/third-party/font-awesome/css/all' . $min . '.css', '', '5.9.0' );
 
-	wp_enqueue_style( 'obulma-google-fonts', 'https://fonts.googleapis.com/css?family=Nunito:400,700', '', '1.0.0' );
+	wp_enqueue_style( 'obulma-google-fonts', 'https://fonts.googleapis.com/css?family=Nunito:400,700', '', '1.0.3' );
 
-	wp_enqueue_style( 'obulma-style', get_stylesheet_uri(), array(), '1.0.2' );
+	wp_enqueue_style( 'obulma-style', get_stylesheet_uri(), array(), '1.0.3' );
 
-	wp_enqueue_style( 'obulma-custom', get_template_directory_uri() . '/css/custom' . $min . '.css', array( 'obulma-style' ), '1.0.1' );
+	wp_enqueue_style( 'obulma-custom', get_template_directory_uri() . '/css/custom' . $min . '.css', array( 'obulma-style' ), '1.0.3' );
 
 	wp_enqueue_script( 'obulma-navigation', get_template_directory_uri() . '/js/navigation' . $min . '.js', array(), '20151215', true );
 

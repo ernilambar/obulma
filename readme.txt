@@ -4,7 +4,7 @@ Contributors: rabmalin
 Requires at least: 5.0
 Tested up to: 5.3
 Requires PHP: 5.6.20
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://nilambar.net/2019/12/obulma-free-wordpress-theme.html
@@ -34,7 +34,7 @@ Obulma is distributed under the terms of the GNU GPL
 
 == Changelog ==
 
-= 1.0.2 - Dec 14 2019 =
+= 1.0.3 - Dec 14 2019 =
 * Minor bug fixes
 
 = 1.0.1 - Aug 24 2019 =
