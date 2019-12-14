@@ -1,0 +1,32 @@
+.pagination,
+.navigation {
+	margin: 15px 0;
+}
+
+.pagination {
+	.pagination-list {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.post-navigation {
+	border-top: 2px solid #f1efef;
+	border-bottom: 2px solid #f1efef;
+	padding: 15px 0;
+	height: auto;
+	overflow: hidden;
+	font-size: 1.25em;
+	& .nav-next {
+		float: right;
+		& .icon {
+			margin-left: 10px;
+		}
+	}
+	& .nav-previous {
+		float: left;
+		& .icon {
+			margin-right: 10px;
+		}
+	}
+}

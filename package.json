@@ -1,0 +1,29 @@
+{
+  "name": "obulma",
+  "version": "1.0.0",
+  "description": "Simple theme",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/ernilambar/obulma.git"
+  },
+  "author": "Nilambar Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/ernilambar/obulma/issues"
+  },
+  "homepage": "https://gitlab.com/ernilambar/obulma#README",
+  "devDependencies": {
+    "bulma": "^0.7.5",
+    "grunt": "^1.0.4",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.0.2",
+    "grunt-wp-i18n": "^1.0.3",
+    "node-sass": "^4.12.0"
+  }
+}
