@@ -36,8 +36,11 @@ gulp.task('scss', function () {
 });
 
 gulp.task('scripts', function() {
-    const { plumber, rename, uglify } = gulpPlugins;
+    const { plumber, rename, uglify, jshint } = gulpPlugins;
     return gulp.src( [themePath + 'scripts/*.js'] )
+	    .pipe(jshint())
+	    .pipe(jshint.reporter('default'))
+	    .pipe(jshint.reporter('fail'))
         .pipe(plumber())
         .pipe(gulp.dest('js'))
         .pipe(rename({suffix: '.min'}))
