@@ -52,7 +52,7 @@ gulp.task( 'watch', function() {
     });
 
     // Watch SCSS files.
-    gulp.watch( themePath + 'sass/front/**/*.scss', gulp.series( 'scss' ) ).on('change',browserSync.reload);
+    gulp.watch( themePath + 'sass/**/*.scss', gulp.series( 'scss' ) ).on('change',browserSync.reload);
 
     // Watch PHP files.
     gulp.watch( themePath + '**/**/*.php' ).on('change',browserSync.reload);

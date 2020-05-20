@@ -163,15 +163,15 @@ function obulma_scripts() {
 
 	wp_enqueue_style( 'obulma-google-fonts', 'https://fonts.googleapis.com/css?family=Nunito:400,700', '', '1.0.3' );
 
-	wp_enqueue_style( 'obulma-style', get_stylesheet_uri(), array(), '1.0.3' );
+	wp_enqueue_style( 'obulma-style', get_stylesheet_uri(), array(), '1.0.4' );
 
-	wp_enqueue_style( 'obulma-custom', get_template_directory_uri() . '/css/custom' . $min . '.css', array( 'obulma-style' ), '1.0.3' );
+	wp_enqueue_style( 'obulma-custom', get_template_directory_uri() . '/css/custom' . $min . '.css', array( 'obulma-style' ), '1.0.4' );
 
 	wp_enqueue_script( 'obulma-navigation', get_template_directory_uri() . '/js/navigation' . $min . '.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'obulma-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix' . $min . '.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'obulma-custom', get_template_directory_uri() . '/js/custom' . $min . '.js', array( 'jquery' ), '1.0.1', true );
+	wp_enqueue_script( 'obulma-custom', get_template_directory_uri() . '/js/custom' . $min . '.js', array( 'jquery' ), '1.0.4', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
