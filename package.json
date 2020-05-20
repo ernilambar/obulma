@@ -1,7 +1,7 @@
 {
   "name": "obulma",
-  "version": "1.0.3",
-  "description": "Simple theme",
+  "version": "1.0.4",
+  "description": "Simple theme based on Bulma.",
   "main": "gulpfile.js",
   "repository": "github:ernilambar/obulma",
   "author": "Nilambar Sharma",
