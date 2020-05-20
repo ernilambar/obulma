@@ -8,6 +8,7 @@
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.7",
+    "bulma": "^0.8.2",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",

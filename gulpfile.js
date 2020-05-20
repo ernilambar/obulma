@@ -22,28 +22,17 @@ var onError = function( err ) {
 };
 
 gulp.task('scss', function () {
-    const { autoprefixer, cleanCss, notify, plumber, sass, sassGlob } = gulpPlugins;
-    return gulp.src(themePath + 'sass/front/style.scss')
-        .on('error', sass.logError)
-        .pipe(plumber())
-        .pipe(sassGlob())
-        .pipe(sass())
-        .pipe(autoprefixer('last 4 version'))
-        .pipe(gulp.dest(themePath))
-});
-
-gulp.task('scss:custom', function () {
-    const { autoprefixer, cleanCss, notify, plumber, sass, sassGlob, uglify, rename } = gulpPlugins;
-    return gulp.src(themePath + 'sass/custom/*.scss')
-        .on('error', sass.logError)
-        .pipe(plumber())
-        .pipe(sassGlob())
-        .pipe(sass())
-        .pipe(autoprefixer('last 4 version'))
-        .pipe(gulp.dest('css'))
-        .pipe(cleanCss())
-        .pipe(rename({ extname: '.min.css' }))
-        .pipe(gulp.dest('css'))
+	const { autoprefixer, cleanCss, notify, plumber, sass, sassGlob, uglify, rename } = gulpPlugins;
+   return gulp.src(themePath + 'sass/custom.scss')
+       .on('error', sass.logError)
+       .pipe(plumber())
+       .pipe(sassGlob())
+       .pipe(sass())
+       .pipe(autoprefixer('last 4 version'))
+       .pipe(gulp.dest('css'))
+       .pipe(cleanCss())
+       .pipe(rename({ extname: '.min.css' }))
+       .pipe(gulp.dest('css'))
 });
 
 gulp.task('scripts', function() {
@@ -64,7 +53,6 @@ gulp.task( 'watch', function() {
 
     // Watch SCSS files.
     gulp.watch( themePath + 'sass/front/**/*.scss', gulp.series( 'scss' ) ).on('change',browserSync.reload);
-    gulp.watch( themePath + 'sass/custom/*.scss', gulp.series( 'scss:custom' ) ).on('change',browserSync.reload);
 
     // Watch PHP files.
     gulp.watch( themePath + '**/**/*.php' ).on('change',browserSync.reload);
@@ -107,7 +95,7 @@ gulp.task('copy:deploy', function() {
 // Tasks.
 gulp.task( 'default', gulp.series('watch'));
 
-gulp.task( 'style', gulp.series('scss', 'scss:custom'));
+gulp.task( 'style', gulp.series('scss'));
 
 gulp.task( 'textdomain', gulp.series('language', 'pot'));
 
