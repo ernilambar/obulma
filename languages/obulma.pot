@@ -165,7 +165,7 @@ msgid "Obulma"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://nilambar.net/2019/12/obulma-free-wordpress-theme.html"
+msgid "https://www.nilambar.net/2019/12/obulma-free-wordpress-theme.html"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -182,7 +182,7 @@ msgid "Nilambar Sharma"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://nilambar.net/"
+msgid "https://www.nilambar.net/"
 msgstr ""
 
 #: comments.php:41

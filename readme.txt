@@ -7,7 +7,7 @@ Requires PHP: 5.6.20
 Stable tag: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Donate link: https://nilambar.net/2019/12/obulma-free-wordpress-theme.html
+Donate link: https://www.nilambar.net/2019/12/obulma-free-wordpress-theme.html
 
 A simple theme
 

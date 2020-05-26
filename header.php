@@ -54,7 +54,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 						'fallback_cb'     => 'obulma_primary_navigation_fallback',
 						'items_wrap'      => '%3$s',
 						'depth'           => 2,
-						'walker'          => new BulmaWP_Navbar_Walker
+						'walker'          => new BulmaWP_Navbar_Walker,
 						) );
 						?>
 				</div>
