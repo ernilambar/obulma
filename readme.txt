@@ -2,8 +2,6 @@
 
 Contributors: rabmalin
 Requires at least: 5.2
-Tested up to: 5.4
-Requires PHP: 5.6.20
 Stable tag: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -34,7 +32,7 @@ Obulma is distributed under the terms of the GNU GPL
 
 == Changelog ==
 
-= 1.0.4 - May 21 2020 =
+= 1.0.4 - May 26 2020 =
 * Minor bug fixes
 
 = 1.0.3 - Dec 14 2019 =
