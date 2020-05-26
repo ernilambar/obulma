@@ -6,6 +6,11 @@
   "repository": "github:ernilambar/obulma",
   "author": "Nilambar Sharma",
   "license": "MIT",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "deploy": "gulp deploy"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "bulma": "^0.8.2",

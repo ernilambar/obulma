@@ -11,9 +11,8 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function obulma_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
+	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
@@ -26,6 +25,7 @@ function obulma_customize_register( $wp_customize ) {
 		) );
 	}
 }
+
 add_action( 'customize_register', 'obulma_customize_register' );
 
 /**
@@ -50,6 +50,7 @@ function obulma_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function obulma_customize_preview_js() {
-	wp_enqueue_script( 'obulma-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
+	wp_enqueue_script( 'obulma-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '1.0.4', true );
 }
+
 add_action( 'customize_preview_init', 'obulma_customize_preview_js' );
