@@ -42,7 +42,8 @@ function obulma_pagination() {
 	if ( ! in_array( 1, $links, true ) ) {
 		$class        = 1 === $paged ? ' is-current' : '';
 		$aria_current = 1 === $paged ? ' aria-current="page"' : '';
-		printf( '<li><a href="%s" class="pagination-link%s" aria-label="Go to page 1"%s>%s</a></li>', esc_url( get_pagenum_link( 1 ) ), $class, $aria_current, '1' );
+		printf( '<li><a href="%s" class="pagination-link%s" aria-label="Go to page 1"%s>%s</a></li>', esc_url( get_pagenum_link( 1 ) ), $class, $aria_current, '1' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+
 		if ( ! in_array( 2, $links, true ) ) {
 			echo '<li><span class="pagination-ellipsis">&hellip;</span></li>' . "\n";
 		}
@@ -53,16 +54,17 @@ function obulma_pagination() {
 	foreach ( (array) $links as $link ) {
 		$class        = $paged === $link ? ' is-current' : '';
 		$aria_current = $paged === $link ? ' aria-current="page"' : '';
-		printf( '<li><a href="%s" class="pagination-link%s" aria-label="Go to page %s"%s>%s</a></li>', esc_url( get_pagenum_link( $link ) ), $class, $link, $aria_current, $link );
+		printf( '<li><a href="%s" class="pagination-link%s" aria-label="Go to page %s"%s>%s</a></li>', esc_url( get_pagenum_link( $link ) ), $class, $link, $aria_current, $link ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 
 	if ( ! in_array( $max, $links, true ) ) {
 		if ( ! in_array( $max - 1, $links, true ) ) {
 			echo '<li><span class="pagination-ellipsis">&hellip;</span></li>' . "\n";
 		}
+
 		$class        = $paged === $max ? ' is-current' : '';
 		$aria_current = $paged === $max ? ' aria-current="page"' : '';
-		printf( '<li><a href="%s" class="pagination-link%s" aria-label="Goto page %s"%s>%s</a></li>', esc_url( get_pagenum_link( $max ) ), $class, $max, $aria_current, $max );
+		printf( '<li><a href="%s" class="pagination-link%s" aria-label="Goto page %s"%s>%s</a></li>', esc_url( get_pagenum_link( $max ) ), $class, $max, $aria_current, $max ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 
 	echo '</ul>';

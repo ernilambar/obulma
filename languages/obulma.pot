@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Obulma 1.0.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/obulma\n"
-"POT-Creation-Date: 2020-06-11 15:20:28+00:00\n"
+"POT-Creation-Date: 2020-06-11 16:03:44+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -68,15 +68,15 @@ msgstr ""
 msgid "Main Navigation"
 msgstr ""
 
-#: inc/helpers.php:70 single.php:24
+#: inc/helpers.php:73 single.php:24
 msgid "Previous"
 msgstr ""
 
-#: inc/helpers.php:74 single.php:25
+#: inc/helpers.php:77 single.php:25
 msgid "Next"
 msgstr ""
 
-#: inc/helpers.php:87
+#: inc/helpers.php:90
 msgid "Home"
 msgstr ""
 

@@ -82,10 +82,14 @@ gulp.task('copy:deploy', function() {
 	const { zip } = gulpPlugins;
 	var sourceFiles = [
 		'**/*',
+		'!composer.json',
+		'!composer.lock',
 		'!gulpfile.js',
 		'!package.json',
 		'!package-lock.json',
+		'!phpcs.xml.dist',
 		'!**/node_modules/**',
+		'!**/vendor/**',
 		'!**/deploy/**'
 	];
 
