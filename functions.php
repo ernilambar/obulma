@@ -76,14 +76,20 @@ if ( ! function_exists( 'obulma_setup' ) ) :
 			)
 		);
 
-		add_theme_support( 'custom-header', apply_filters( 'obulma_custom_header_args', array(
-			'default-image'      => '',
-			'default-text-color' => '000000',
-			'width'              => 1900,
-			'height'             => 450,
-			'flex-height'        => true,
-			'header-text'        => false,
-		) ) );
+		add_theme_support(
+			'custom-header',
+			apply_filters(
+				'obulma_custom_header_args',
+				array(
+					'default-image'      => '',
+					'default-text-color' => '000000',
+					'width'              => 1900,
+					'height'             => 450,
+					'flex-height'        => true,
+					'header-text'        => false,
+				)
+			)
+		);
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );

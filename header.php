@@ -44,19 +44,21 @@ if ( function_exists( 'wp_body_open' ) ) {
 			<div id="main-menu" class="navbar-menu">
 				<div class="navbar-end">
 					<?php
-					wp_nav_menu( array(
-						'theme_location'  => 'menu-1',
-						'container'       => '',
-						'container_class' => '',
-						'container_id'    => '',
-						'menu_class'      => '',
-						'menu_id'         => '',
-						'fallback_cb'     => 'obulma_primary_navigation_fallback',
-						'items_wrap'      => '%3$s',
-						'depth'           => 2,
-						'walker'          => new BulmaWP_Navbar_Walker,
-						) );
-						?>
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'menu-1',
+							'container'       => '',
+							'container_class' => '',
+							'container_id'    => '',
+							'menu_class'      => '',
+							'menu_id'         => '',
+							'fallback_cb'     => 'obulma_primary_navigation_fallback',
+							'items_wrap'      => '%3$s',
+							'depth'           => 2,
+							'walker'          => new BulmaWP_Navbar_Walker(),
+						)
+					);
+					?>
 				</div>
 			</div>
 		</div><!-- .container -->
@@ -65,7 +67,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 	<header id="masthead" class="site-header header-content">
 		<?php
 		$banner_image = get_header_image();
-		$extra_style = '';
+		$extra_style  = '';
 		if ( $banner_image ) {
 			$extra_style .= 'background-image: url(' . esc_url( $banner_image ) . ');background-size:cover;';
 		}
