@@ -39,39 +39,40 @@ function obulma_pagination() {
 	echo '<nav class="pagination" role="navigation" aria-label="pagination">';
 	echo '<ul class="pagination-list">';
 
-	if ( ! in_array( 1, $links ) ) {
-		$class        = 1 == $paged ? ' is-current' : '';
-		$aria_current = 1 == $paged ? ' aria-current="page"' : '';
+	if ( ! in_array( 1, $links, true ) ) {
+		$class        = 1 === $paged ? ' is-current' : '';
+		$aria_current = 1 === $paged ? ' aria-current="page"' : '';
 		printf( '<li><a href="%s" class="pagination-link%s" aria-label="Go to page 1"%s>%s</a></li>', esc_url( get_pagenum_link( 1 ) ), $class, $aria_current, '1' );
-		if ( ! in_array( 2, $links ) ) {
+		if ( ! in_array( 2, $links, true ) ) {
 			echo '<li><span class="pagination-ellipsis">&hellip;</span></li>' . "\n";
 		}
 	}
+
 	sort( $links );
 
 	foreach ( (array) $links as $link ) {
-		$class        = $paged == $link ? ' is-current' : '';
-		$aria_current = $paged == $link ? ' aria-current="page"' : '';
+		$class        = $paged === $link ? ' is-current' : '';
+		$aria_current = $paged === $link ? ' aria-current="page"' : '';
 		printf( '<li><a href="%s" class="pagination-link%s" aria-label="Go to page %s"%s>%s</a></li>', esc_url( get_pagenum_link( $link ) ), $class, $link, $aria_current, $link );
 	}
 
-	if ( ! in_array( $max, $links ) ) {
-		if ( ! in_array( $max - 1, $links ) ) {
+	if ( ! in_array( $max, $links, true ) ) {
+		if ( ! in_array( $max - 1, $links, true ) ) {
 			echo '<li><span class="pagination-ellipsis">&hellip;</span></li>' . "\n";
 		}
-		$class        = $paged == $max ? ' is-current' : '';
-		$aria_current = $paged == $max ? ' aria-current="page"' : '';
+		$class        = $paged === $max ? ' is-current' : '';
+		$aria_current = $paged === $max ? ' aria-current="page"' : '';
 		printf( '<li><a href="%s" class="pagination-link%s" aria-label="Goto page %s"%s>%s</a></li>', esc_url( get_pagenum_link( $max ) ), $class, $max, $aria_current, $max );
 	}
 
 	echo '</ul>';
 
 	if ( get_previous_posts_link() ) {
-		printf( '%s', get_previous_posts_link( esc_html__( 'Previous', 'obulma' ) ) );
+		printf( '%s', wp_kses_post( get_previous_posts_link( esc_html__( 'Previous', 'obulma' ) ) ) );
 	}
 
 	if ( get_next_posts_link() ) {
-		printf( '%s', get_next_posts_link( esc_html__( 'Next', 'obulma' ) ) );
+		printf( '%s', wp_kses_post( get_next_posts_link( esc_html__( 'Next', 'obulma' ) ) ) );
 	}
 
 	echo '</nav>';
