@@ -163,7 +163,7 @@ function obulma_scripts() {
 
 	wp_enqueue_style( 'obulma-google-fonts', 'https://fonts.googleapis.com/css?family=Nunito:400,700', '', '1.0.3' );
 
-	wp_enqueue_style( 'obulma-style', get_stylesheet_uri(), array(), '1.0.4' );
+	wp_enqueue_style( 'obulma-style', get_stylesheet_uri(), array(), '1.0.5' );
 
 	wp_enqueue_style( 'obulma-custom', get_template_directory_uri() . '/css/custom' . $min . '.css', array( 'obulma-style' ), '1.0.4' );
 
