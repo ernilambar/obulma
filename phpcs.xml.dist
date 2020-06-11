@@ -11,6 +11,7 @@
 	<exclude-pattern>*/phpunit.xml*</exclude-pattern>
 	<exclude-pattern>*/languages/*</exclude-pattern>
 	<exclude-pattern>*/tests/*</exclude-pattern>
+	<exclude-pattern>*/deploy/*</exclude-pattern>
 
 	<!-- Third-party code -->
 	<exclude-pattern>*/bower-components/*</exclude-pattern>

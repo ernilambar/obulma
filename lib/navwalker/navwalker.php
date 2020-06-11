@@ -1,5 +1,7 @@
 <?php
 /**
+ * Menu walker class
+ *
  * @package bulmawp
  * @since 0.1.0
  * @version 0.4.0
@@ -8,8 +10,6 @@
 if ( ! class_exists( 'BulmaWP_Navbar_Walker' ) ) {
 	/**
 	 * BulmaWP_Navbar_Walker class.
-	 *
-	 * @extends Walker_Nav_Menu
 	 */
 	class BulmaWP_Navbar_Walker extends Walker_Nav_Menu {
 		/**
@@ -93,7 +93,7 @@ if ( ! class_exists( 'BulmaWP_Navbar_Walker' ) ) {
 			$attributes  = $this->get_item_attributes( $item, $args );
 			if ( ! $args['has_children'] ) {
 				$classes = empty( $item->classes ) ? array() : (array) $item->classes;
-				if ( ! in_array( 'navbar-divider', $classes ) ) {
+				if ( ! in_array( 'navbar-divider', $classes, true ) ) {
 					$item_output  = $args['before'];
 					$item_output .= '<a' . $class_names . $attributes . '>';
 					$item_output .= $args['link_before'] . apply_filters( 'the_title', $item->title, $item->ID ) . $args['link_after'];
@@ -130,7 +130,7 @@ if ( ! class_exists( 'BulmaWP_Navbar_Walker' ) ) {
 		 * @return void
 		 */
 		public function end_el( &$output, $item, $depth = 0, $args = array() ) {
-			if ( ! in_array( 'menu-item-has-children', $item->classes ) ) {
+			if ( ! in_array( 'menu-item-has-children', $item->classes, true ) ) {
 				$output .= "</a>\n";
 			} else {
 				$output .= "</div>\n";
@@ -170,6 +170,16 @@ if ( ! class_exists( 'BulmaWP_Navbar_Walker' ) ) {
 			}
 			parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
 		}
+
+		/**
+		 * Get item classes.
+		 *
+		 * @since 1.0.0
+		 *
+		 * @param  array $item Items.
+		 * @param  array $args Arguments.
+		 * @return string Classes.
+		 */
 		private function get_item_classes( $item, $args ) {
 			$defaults = array(
 				'menu'            => '',
@@ -205,6 +215,15 @@ if ( ! class_exists( 'BulmaWP_Navbar_Walker' ) ) {
 			return $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
 		}
 
+		/**
+		 * Get item attributes.
+		 *
+		 * @since 1.0.0
+		 *
+		 * @param  array $item Items.
+		 * @param  array $args Arguments.
+		 * @return string Attributes.
+		 */
 		private function get_item_attributes( $item, $args ) {
 			$atts           = array();
 			$atts['target'] = ! empty( $item->target ) ? $item->target : '';
@@ -234,12 +253,12 @@ if ( ! class_exists( 'BulmaWP_Navbar_Walker' ) ) {
 		 */
 		public static function fallback( $args ) {
 			if ( current_user_can( 'edit_theme_options' ) ) {
-				/* Get Arguments. */
 				$container       = $args['container'];
 				$container_id    = $args['container_id'];
 				$container_class = $args['container_class'];
 				$menu_class      = $args['menu_class'];
 				$menu_id         = $args['menu_id'];
+
 				if ( $container ) {
 					echo '<' . esc_attr( $container );
 					if ( $container_id ) {
@@ -250,7 +269,9 @@ if ( ! class_exists( 'BulmaWP_Navbar_Walker' ) ) {
 					}
 					echo '>';
 				}
-				echo '<a class="navbar-item" href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '" title="">' . esc_attr( 'Add a menu', 'bulmawp' ) . '</a>';
+
+				echo '<a class="navbar-item" href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '">' . esc_html__( 'Add a menu', 'obulma' ) . '</a>';
+
 				if ( $container ) {
 					echo '</' . esc_attr( $container ) . '>';
 				}

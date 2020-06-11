@@ -4,8 +4,6 @@
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package Obulma
  */
 
@@ -90,7 +88,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 					$obulma_description = get_bloginfo( 'description', 'display' );
 					if ( $obulma_description || is_customize_preview() ) :
 						?>
-						<p class="site-description subtitle"><?php echo $obulma_description; /* WPCS: xss ok. */ ?></p>
+						<p class="site-description subtitle"><?php echo $obulma_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 					<?php endif; ?>
 				</div>
 			</div>
