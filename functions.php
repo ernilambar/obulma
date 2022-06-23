@@ -7,6 +7,10 @@
  * @package Obulma
  */
 
+if ( ! defined( 'OBULMA_VERSION' ) ) {
+	define( 'OBULMA_VERSION', '1.0.5' );
+}
+
 if ( ! function_exists( 'obulma_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -167,17 +171,17 @@ function obulma_scripts() {
 
 	wp_enqueue_style( 'obulma-font-awesome', get_template_directory_uri() . '/third-party/font-awesome/css/all' . $min . '.css', '', '5.9.0' );
 
-	wp_enqueue_style( 'obulma-google-fonts', 'https://fonts.googleapis.com/css?family=Nunito:400,700', '', '1.0.3' );
+	wp_enqueue_style( 'obulma-google-fonts', wptt_get_webfont_url( 'https://fonts.googleapis.com/css?family=Nunito:400,700' ), '', OBULMA_VERSION );
 
-	wp_enqueue_style( 'obulma-style', get_stylesheet_uri(), array(), '1.0.5' );
+	wp_enqueue_style( 'obulma-style', get_stylesheet_uri(), array(), OBULMA_VERSION );
 
-	wp_enqueue_style( 'obulma-custom', get_template_directory_uri() . '/css/custom' . $min . '.css', array( 'obulma-style' ), '1.0.4' );
+	wp_enqueue_style( 'obulma-custom', get_template_directory_uri() . '/css/custom' . $min . '.css', array( 'obulma-style' ), OBULMA_VERSION );
 
 	wp_enqueue_script( 'obulma-navigation', get_template_directory_uri() . '/js/navigation' . $min . '.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'obulma-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix' . $min . '.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'obulma-custom', get_template_directory_uri() . '/js/custom' . $min . '.js', array( 'jquery' ), '1.0.4', true );
+	wp_enqueue_script( 'obulma-custom', get_template_directory_uri() . '/js/custom' . $min . '.js', array( 'jquery' ), OBULMA_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -205,6 +209,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Nav Walker.
  */
 require get_template_directory() . '/lib/navwalker/navwalker.php';
+
+/**
+ * Load WebFonts Loader.
+ */
+require get_template_directory() . '/lib/webfont-loader/wptt-webfont-loader.php';
 
 /**
  * Load helpers.
