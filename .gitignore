@@ -1,20 +1,19 @@
 # Editors
 project.xml
 project.properties
-/nbproject/private/
+nbproject/private/
 .buildpath
 .project
 .settings*
 .idea
 
-# Grunt
-/node_modules/
-
-# Composer
-vendor/
+# Node
+node_modules/
+deploy/
+build/
 
 # Docs
-/docs/
+docs/
 
 # Sass
 .sass-cache/
@@ -25,8 +24,8 @@ vendor/
 # Windows junk
 Thumbs.db
 
-# Theme specific
-test.php
+# Environment
+.env
 
-# Deploy
-/deploy/
+# Map
+*.map

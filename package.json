@@ -7,14 +7,18 @@
   "author": "Nilambar Sharma",
   "license": "MIT",
   "scripts": {
-    "start": "gulp",
+    "dev": "gulp",
     "build": "gulp build",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+		"pot": "npm run textdomain && npm run language",
+		"language": "wpi18n makepot --domain-path=languages --exclude=vendor,deploy,node_modules",
+		"textdomain": "wpi18n addtextdomain --exclude=vendor,deploy,node_modules"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "bulma": "^0.8.2",
     "del": "^5.1.0",
+    "dotenv": "^16.0.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.2.0",
@@ -23,11 +27,11 @@
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-run": "^1.7.1",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "gulp-sass-glob": "^1.0.9",
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^5.0.1",
     "jshint": "^2.11.1",
-    "node-wp-i18n": "^1.2.3"
+    "node-wp-i18n": "^1.2.6"
   }
 }
