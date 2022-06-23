@@ -31,7 +31,7 @@
 						<span class="sep"> | </span>
 							<?php
 							/* translators: 1: Theme name, 2: Theme author. */
-							printf( esc_html__( 'Theme: %1$s by %2$s.', 'obulma' ), 'obulma', '<a href="https://www.nilambar.net/">Nilambar Sharma</a>' );
+							printf( esc_html__( 'Theme: %1$s by %2$s.', 'obulma' ), 'Obulma', '<a href="https://www.nilambar.net/">Nilambar Sharma</a>' );
 							?>
 					</div><!-- .site-info -->
 				</div><!-- .column -->
