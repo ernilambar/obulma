@@ -12,6 +12,8 @@ var fs = require('fs');
 
 var pkg = JSON.parse(fs.readFileSync('./package.json'));
 
+var sass = require('gulp-sass')(require('sass'));
+
 // Browser sync.
 const browserSync = require('browser-sync').create();
 
@@ -24,7 +26,7 @@ var onError = function( err ) {
 };
 
 gulp.task('scss', function () {
-	const { autoprefixer, cleanCss, plumber, sass, sassGlob, rename } = gulpPlugins;
+	const { autoprefixer, cleanCss, plumber, sassGlob, rename } = gulpPlugins;
    return gulp.src(rootPath + 'sass/custom.scss')
        .on('error', sass.logError)
        .pipe(plumber())

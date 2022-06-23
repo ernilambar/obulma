@@ -10,13 +10,13 @@
     "dev": "gulp",
     "build": "gulp build",
     "deploy": "gulp deploy",
-		"pot": "npm run textdomain && npm run language",
-		"language": "wpi18n makepot --domain-path=languages --exclude=vendor,deploy,node_modules",
-		"textdomain": "wpi18n addtextdomain --exclude=vendor,deploy,node_modules"
+    "pot": "npm run textdomain && npm run language",
+    "language": "wpi18n makepot --domain-path=languages --exclude=vendor,deploy,node_modules",
+    "textdomain": "wpi18n addtextdomain --exclude=vendor,deploy,node_modules"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "bulma": "^0.8.2",
+    "bulma": "^0.9.4",
     "del": "^5.1.0",
     "dotenv": "^16.0.1",
     "gulp": "^4.0.2",
@@ -32,6 +32,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^5.0.1",
     "jshint": "^2.11.1",
-    "node-wp-i18n": "^1.2.6"
+    "node-wp-i18n": "^1.2.6",
+    "sass": "^1.53.0"
   }
 }
