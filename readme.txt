@@ -1,7 +1,9 @@
 === Obulma ===
 
 Contributors: rabmalin
-Requires at least: 5.2
+Requires at least: 5.4
+Tested up to: 6.0
+Requires PHP: 5.6
 Stable tag: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -32,7 +34,8 @@ Obulma is distributed under the terms of the GNU GPL
 
 == Changelog ==
 
-= 1.0.5 - Jun 12 2020 =
+= 1.0.5 - Jun 23 2022 =
+* WP 6.0 compatibility
 * Minor bug fixes
 
 = 1.0.4 - May 26 2020 =
@@ -53,4 +56,5 @@ Obulma is distributed under the terms of the GNU GPL
 * Bulma https://bulma.io/, (C) 2019 Jeremy Thomas, [MIT](https://opensource.org/licenses/MIT)
 * Font Awesome: http://fontawesome.io/, (c) Dave Gandy, CSS - [MIT](http://opensource.org/licenses/MIT) ; Fonts - [SIL OFL 1.1](http://scripts.sil.org/OFL)
 * Textured Background - https://pxhere.com/en/photo/1430853 - [CC0](https://creativecommons.org/publicdomain/zero/1.0/legalcode)
+* Webfonts Loader https://github.com/WPTT/webfont-loader, (C) 2020 WPTT, [MIT](http://opensource.org/licenses/MIT)
 * Nature and Girl - https://pxhere.com/en/photo/1198258 - [CC0](https://creativecommons.org/publicdomain/zero/1.0/legalcode)
