@@ -24,9 +24,9 @@ function obulma_render_welcome_page() {
 
 	$theme_data = wp_get_theme( 'obulma' );
 
-	$version     = $theme_data->Version;
-	$description = $theme_data->Description;
-	$theme_uri   = $theme_data->ThemeURI;
+	$version     = $theme_data->get('Version');
+	$description = $theme_data->get('Description');
+	$theme_uri   = $theme_data->get('ThemeURI');
 	?>
 
 	<div class="wrap about-wrap ns-wrap">
