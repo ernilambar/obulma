@@ -1,0 +1,66 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "53dd5fe0303401771b8024d23f399571",
+    "packages": [
+        {
+            "name": "ernilambar/wp-admin-notice",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ernilambar/wp-admin-notice.git",
+                "reference": "1fd14ff6d79994750d25b4f529284a6942e117eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ernilambar/wp-admin-notice/zipball/1fd14ff6d79994750d25b4f529284a6942e117eb",
+                "reference": "1fd14ff6d79994750d25b4f529284a6942e117eb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nilambar\\AdminNotice\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nilambar Sharma",
+                    "email": "nilambar@outlook.com",
+                    "homepage": "https://www.nilambar.net/"
+                }
+            ],
+            "description": "WordPress Helper for showing admin notice",
+            "homepage": "https://github.com/ernilambar/wp-admin-notice",
+            "keywords": [
+                "admin",
+                "notice",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/ernilambar/wp-admin-notice/issues/",
+                "source": "https://github.com/ernilambar/wp-admin-notice/tree/1.0.0"
+            },
+            "time": "2022-06-27T07:08:52+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}

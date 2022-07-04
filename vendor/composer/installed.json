@@ -1,0 +1,56 @@
+{
+    "packages": [
+        {
+            "name": "ernilambar/wp-admin-notice",
+            "version": "1.0.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ernilambar/wp-admin-notice.git",
+                "reference": "1fd14ff6d79994750d25b4f529284a6942e117eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ernilambar/wp-admin-notice/zipball/1fd14ff6d79994750d25b4f529284a6942e117eb",
+                "reference": "1fd14ff6d79994750d25b4f529284a6942e117eb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "time": "2022-06-27T07:08:52+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Nilambar\\AdminNotice\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nilambar Sharma",
+                    "email": "nilambar@outlook.com",
+                    "homepage": "https://www.nilambar.net/"
+                }
+            ],
+            "description": "WordPress Helper for showing admin notice",
+            "homepage": "https://github.com/ernilambar/wp-admin-notice",
+            "keywords": [
+                "admin",
+                "notice",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/ernilambar/wp-admin-notice/issues/",
+                "source": "https://github.com/ernilambar/wp-admin-notice/tree/1.0.0"
+            },
+            "install-path": "../ernilambar/wp-admin-notice"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

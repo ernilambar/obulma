@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Obulma 1.0.5\n"
+"Project-Id-Version: Obulma 1.0.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/obulma\n"
-"POT-Creation-Date: 2022-06-23 09:41:31+00:00\n"
+"POT-Creation-Date: 2022-07-04 10:13:39+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -48,15 +48,15 @@ msgstr ""
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: functions.php:52
+#: functions.php:57
 msgid "Primary"
 msgstr ""
 
-#: functions.php:151
+#: functions.php:156
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:153
+#: functions.php:158
 msgid "Add widgets here to appear in your sidebar."
 msgstr ""
 
@@ -102,9 +102,8 @@ msgstr ""
 msgid "Comment"
 msgstr ""
 
-#: inc/template-tags.php:59
-#. translators: used between list items, there is a space after the comma
-msgid ", "
+#. Theme Name of the plugin/theme
+msgid "Obulma"
 msgstr ""
 
 #: inc/template-tags.php:77
@@ -164,10 +163,6 @@ msgstr ""
 msgid "Read More"
 msgstr ""
 
-#. Theme Name of the plugin/theme
-msgid "Obulma"
-msgstr ""
-
 #. Theme URI of the plugin/theme
 msgid "https://www.nilambar.net/2019/12/obulma-free-wordpress-theme.html"
 msgstr ""
@@ -197,7 +192,7 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/template-tags.php:65
+#: inc/template-tags.php:59 inc/template-tags.php:65
 #. translators: used between list items, there is a space after the comma
 msgctxt "list item separator"
 msgid ", "

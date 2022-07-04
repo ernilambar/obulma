@@ -130,3 +130,21 @@ function obulma_customize_comment_form( $defaults ) {
 }
 
 add_filter( 'comment_form_defaults', 'obulma_customize_comment_form' );
+
+/**
+ * Add admin notice.
+ *
+ * @since 1.0.6
+ */
+function obulma_add_admin_notice() {
+	// Setup notice.
+	\Nilambar\AdminNotice\Notice::init(
+		array(
+			'slug' => 'obulma',
+			'type' => 'theme',
+			'name' => esc_html__( 'Obulma', 'obulma' ),
+		)
+	);
+}
+
+add_action( 'admin_init', 'obulma_add_admin_notice' );
