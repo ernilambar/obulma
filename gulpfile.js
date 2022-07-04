@@ -83,7 +83,6 @@ gulp.task('copy:deploy', function() {
 		'!package-lock.json',
 		'!phpcs.xml.dist',
 		'!**/node_modules/**',
-		'!**/vendor/**',
 		'!**/deploy/**'
 	];
 
