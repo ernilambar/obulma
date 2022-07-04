@@ -224,3 +224,8 @@ require get_template_directory() . '/lib/webfont-loader/wptt-webfont-loader.php'
  * Load helpers.
  */
 require get_template_directory() . '/inc/helpers.php';
+
+/**
+ * Load welcome.
+ */
+require get_template_directory() . '/inc/welcome/welcome.php';
