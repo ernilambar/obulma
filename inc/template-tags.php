@@ -56,7 +56,7 @@ if ( ! function_exists( 'obulma_entry_footer' ) ) :
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'obulma' ) );
+			$categories_list = get_the_category_list( esc_html_x( ', ', 'list item separator', 'obulma' ) );
 			if ( $categories_list ) {
 				printf( '<span class="cat-links">%1$s</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput
 			}

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "ernilambar/wp-admin-notice": "^1.0"
+    }
+}

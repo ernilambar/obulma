@@ -49,4 +49,5 @@ npm-debug.log
 docs/
 build/
 deploy/
+vendor/
 node_modules/

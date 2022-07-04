@@ -8,7 +8,12 @@
  */
 
 if ( ! defined( 'OBULMA_VERSION' ) ) {
-	define( 'OBULMA_VERSION', '1.0.5' );
+	define( 'OBULMA_VERSION', '1.0.6' );
+}
+
+// Load autoload.
+if ( file_exists( get_parent_theme_file_path( 'vendor/autoload.php' ) ) ) {
+	require_once get_parent_theme_file_path( 'vendor/autoload.php' );
 }
 
 if ( ! function_exists( 'obulma_setup' ) ) :
