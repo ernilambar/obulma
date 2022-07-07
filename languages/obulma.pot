@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Obulma 1.0.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/obulma\n"
-"POT-Creation-Date: 2022-07-04 10:39:57+00:00\n"
+"POT-Creation-Date: 2022-07-07 10:47:46+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -116,7 +116,7 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/welcome/welcome.php:36
+#: inc/welcome/welcome.php:35
 msgid "Version: %s"
 msgstr ""
 

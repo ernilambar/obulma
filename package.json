@@ -2,7 +2,6 @@
   "name": "obulma",
   "version": "1.0.6",
   "description": "Simple theme based on Bulma.",
-  "main": "gulpfile.js",
   "repository": "github:ernilambar/obulma",
   "author": "Nilambar Sharma",
   "license": "MIT",
@@ -10,7 +9,8 @@
     "dev": "gulp",
     "build": "gulp build",
     "deploy": "gulp deploy",
-    "pot": "npm run textdomain && npm run language",
+		"preinstall": "npx only-allow pnpm",
+    "pot": "pnpm run textdomain && pnpm run language",
     "language": "wpi18n makepot --domain-path=languages --exclude=vendor,deploy,node_modules",
     "textdomain": "wpi18n addtextdomain --exclude=vendor,deploy,node_modules"
   },
