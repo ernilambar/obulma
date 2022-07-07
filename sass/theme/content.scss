@@ -16,7 +16,7 @@
 
 .entry-meta span::before,
 .entry-footer span::before {
-	font-family: 'Font Awesome 5 Free';
+	font-family: "Font Awesome 5 Free";
 	display: inline-block;
 	height: 15px;
 	font-size: 12px;
@@ -31,7 +31,7 @@
 	margin-right: 15px;
 }
 
-.entry-meta > .posted-on::before{
+.entry-meta > .posted-on::before {
 	content: "\f017";
 }
 
