@@ -14,6 +14,7 @@ if ( ! defined( 'OBULMA_VERSION' ) ) {
 // Load autoload.
 if ( file_exists( get_parent_theme_file_path( 'vendor/autoload.php' ) ) ) {
 	require_once get_parent_theme_file_path( 'vendor/autoload.php' );
+	require_once get_parent_theme_file_path( 'vendor/wptt/webfont-loader/wptt-webfont-loader.php' );
 }
 
 if ( ! function_exists( 'obulma_setup' ) ) :
@@ -214,11 +215,6 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Nav Walker.
  */
 require get_template_directory() . '/lib/navwalker/navwalker.php';
-
-/**
- * Load WebFonts Loader.
- */
-require get_template_directory() . '/lib/webfont-loader/wptt-webfont-loader.php';
 
 /**
  * Load helpers.
