@@ -11585,7 +11585,8 @@ a:focus {
   display: block;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding-left: 1.5em;
 }
@@ -11911,7 +11912,8 @@ object {
   font-weight: bold;
   margin-bottom: 10px;
 }
-.widget_calendar table td, .widget_calendar table th {
+.widget_calendar table td,
+.widget_calendar table th {
   border: 1px #f1efef solid;
   padding: 5px;
   text-align: center;

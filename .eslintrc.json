@@ -1,0 +1,17 @@
+{
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"extends": ["plugin:@wordpress/eslint-plugin/esnext"],
+	"parserOptions": {
+		"requireConfigFile": false
+	},
+	"globals": {
+		"wp": true,
+		"jQuery": true
+	},
+	"rules": {
+		"no-console": "error"
+	}
+}
