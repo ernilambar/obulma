@@ -1,5 +1,6 @@
 {
     "require": {
-        "ernilambar/wp-admin-notice": "^1.0"
+        "ernilambar/wp-admin-notice": "^1.0",
+        "wptt/webfont-loader": "^1.1"
     }
 }
