@@ -7,12 +7,6 @@ const rootPath = './';
 // Gulp.
 const gulp = require( 'gulp' );
 
-// File system.
-const fs = require( 'fs' );
-
-// Package.
-const pkg = JSON.parse( fs.readFileSync( './package.json' ) );
-
 // Browser sync.
 const browserSync = require( 'browser-sync' ).create();
 
