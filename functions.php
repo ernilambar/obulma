@@ -185,8 +185,6 @@ function obulma_scripts() {
 
 	wp_enqueue_script( 'obulma-navigation', get_template_directory_uri() . '/js/navigation' . $min . '.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'obulma-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix' . $min . '.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'obulma-custom', get_template_directory_uri() . '/js/custom' . $min . '.js', array( 'jquery' ), OBULMA_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
