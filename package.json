@@ -1,6 +1,6 @@
 {
   "name": "obulma",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Simple theme based on Bulma.",
   "repository": "github:ernilambar/obulma",
   "author": "Nilambar Sharma",
@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "gulp",
     "build": "gulp build",
+		"version": "grunt version",
     "eslint": "eslint \"scripts/**/*.{js,jsx}\" --quiet",
     "eslint:fix": "eslint \"scripts/**/*.{js,jsx}\" --quiet --fix",
     "format": "prettier --write \"sass/**/*.scss\"",
@@ -31,6 +32,8 @@
     "del": "^6.1.1",
     "dotenv": "^16.0.1",
     "eslint": "^8.19.0",
+    "grunt": "^1.5.3",
+    "grunt-replace": "^2.0.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
