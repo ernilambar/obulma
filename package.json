@@ -8,11 +8,10 @@
   "scripts": {
     "dev": "gulp",
     "build": "gulp build",
-		"version": "grunt version",
+    "version": "grunt version",
     "eslint": "eslint \"scripts/**/*.{js,jsx}\" --quiet",
     "eslint:fix": "eslint \"scripts/**/*.{js,jsx}\" --quiet --fix",
     "format": "prettier --write \"sass/**/*.scss\"",
-    "preinstall": "npx only-allow pnpm",
     "pot": "wpi18n makepot --domain-path=languages --exclude=vendor,deploy,node_modules",
     "textdomain": "wpi18n addtextdomain --exclude=vendor,deploy,node_modules",
     "deploy": "shx rm -rf deploy/ && shx mkdir deploy && copy-files-from-to --config .copyfiles.json && cd deploy/ && shx mv temp $npm_package_name && bestzip ../$npm_package_name.zip * && cd .. && shx mv $npm_package_name.zip deploy/"
@@ -30,7 +29,6 @@
     "bulma": "^0.9.4",
     "copy-files-from-to": "^3.2.2",
     "del": "^6.1.1",
-    "dotenv": "^16.0.1",
     "eslint": "^8.19.0",
     "grunt": "^1.5.3",
     "grunt-replace": "^2.0.2",

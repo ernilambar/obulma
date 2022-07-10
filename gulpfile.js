@@ -1,6 +1,3 @@
-// Env.
-require( 'dotenv' ).config();
-
 // Config.
 const rootPath = './';
 
