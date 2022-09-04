@@ -34,7 +34,7 @@ Obulma is distributed under the terms of the GNU GPL
 
 == Changelog ==
 
-= 1.0.7 - Jul 9 2022 =
+= 1.0.7 - Sep 4 2022 =
 * Fix skip link
 * Minor bug fixes
 

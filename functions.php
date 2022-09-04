@@ -1,8 +1,6 @@
 <?php
 /**
- * Obulma functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ * Functions and definitions
  *
  * @package Obulma
  */

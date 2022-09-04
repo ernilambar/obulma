@@ -1,17 +1,19 @@
 {
-	"env": {
-		"browser": true,
-		"node": true
-	},
-	"extends": ["plugin:@wordpress/eslint-plugin/es5"],
-	"parserOptions": {
-		"requireConfigFile": false
-	},
-	"globals": {
-		"wp": true,
-		"jQuery": true
-	},
-	"rules": {
-		"no-console": "error"
-	}
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": ["plugin:@wordpress/eslint-plugin/es5"],
+  "parserOptions": {
+    "requireConfigFile": false
+  },
+  "globals": {
+    "wp": true,
+    "jQuery": true
+  },
+  "rules": {
+    "no-console": "error",
+    "no-alert": "error",
+    "vars-on-top": "warn"
+  }
 }
