@@ -171,8 +171,6 @@ add_action( 'widgets_init', 'obulma_widgets_init' );
 function obulma_scripts() {
 	$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
-	wp_enqueue_style( 'obulma-bulma', get_template_directory_uri() . '/third-party/bulma/bulma' . $min . '.css', '', '0.7.4' );
-
 	wp_enqueue_style( 'obulma-font-awesome', get_template_directory_uri() . '/third-party/font-awesome/css/all' . $min . '.css', '', '5.9.0' );
 
 	wp_enqueue_style( 'obulma-google-fonts', wptt_get_webfont_url( 'https://fonts.googleapis.com/css?family=Nunito:400,700' ), '', OBULMA_VERSION );
