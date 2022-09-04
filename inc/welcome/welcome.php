@@ -148,8 +148,10 @@ function obulma_load_welcome_assets( $hook ) {
 		return;
 	}
 
-	wp_enqueue_style( 'obulma-welcome', get_template_directory_uri() . '/css/welcome.css', array(), OBULMA_VERSION );
-	wp_enqueue_script( 'obulma-blog-posts', get_template_directory_uri() . '/js/blog-posts.js', array( 'jquery' ), OBULMA_VERSION, true );
+	$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+
+	wp_enqueue_style( 'obulma-welcome', get_template_directory_uri() . '/css/welcome' . $min . '.css', array(), OBULMA_VERSION );
+	wp_enqueue_script( 'obulma-blog-posts', get_template_directory_uri() . '/js/blog-posts' . $min . '.js', array( 'jquery' ), OBULMA_VERSION, true );
 }
 
 add_action( 'admin_enqueue_scripts', 'obulma_load_welcome_assets' );
