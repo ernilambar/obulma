@@ -5,7 +5,7 @@
   "author": "Nilambar Sharma",
   "repository": "github:ernilambar/obulma",
   "scripts": {
-    "dev": "gulp",
+    "dev": "pnpm run build && gulp",
     "build": "gulp build",
     "eslint": "eslint --quiet .",
     "eslint:fix": "eslint --quiet --fix .",
@@ -14,7 +14,7 @@
     "pot": "wpi18n makepot --domain-path=languages --exclude=vendor,deploy,node_modules",
     "textdomain": "wpi18n addtextdomain --exclude=vendor,deploy,node_modules",
     "version": "easy-replace-in-files",
-    "predeploy": "shx rm -rf vendor/ && composer install --no-dev --no-scripts -o",
+    "predeploy": "shx rm -rf vendor/ && composer install --no-dev --no-scripts -o && shx rm -rf css/ && shx rm -rf js/ && pnpm run build",
     "deploy": "shx rm -rf deploy/ && shx mkdir deploy && copy-files-from-to && cd deploy/ && cross-var shx mv temp $npm_package_name && cross-var bestzip ../$npm_package_name.zip * && cd .. && cross-var shx mv $npm_package_name.zip deploy/",
     "prewpdeploy": "pnpm run deploy",
     "wpdeploy": "wp-deployer"
