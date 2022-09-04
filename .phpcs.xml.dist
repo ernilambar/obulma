@@ -37,9 +37,9 @@
   <config name="ignore_warnings_on_exit" value="1"/>
 
   <!-- Include the WordPress rulesets. -->
-  <rule ref="WordPress">
-    <exclude name="WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents"/>
-	</rule>
+  <rule ref="WordPress" />
+
+	<rule ref="WPThemeReview"/>
 
   <rule ref="WordPress.WhiteSpace.ControlStructureSpacing">
     <properties>
