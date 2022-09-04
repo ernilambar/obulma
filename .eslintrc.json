@@ -9,6 +9,7 @@
   },
   "globals": {
     "wp": true,
+    "ajaxurl": true,
     "jQuery": true
   },
   "rules": {

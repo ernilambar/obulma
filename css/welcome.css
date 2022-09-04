@@ -1,0 +1,77 @@
+.ns-wrap p {
+  font-size: 15px;
+}
+.ns-wrap .ns-header {
+  padding-bottom: 2px;
+}
+.ns-wrap .ns-main-content {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 25px;
+}
+@media (min-width: 64em) {
+  .ns-wrap .ns-main-content {
+    flex-direction: row;
+  }
+}
+.ns-wrap .ns-tab-contents {
+  margin-top: 20px;
+}
+.ns-wrap .ns-content-left {
+  width: 100%;
+}
+.ns-wrap .ns-content-right {
+  flex: 0 0 250px;
+}
+.ns-wrap .ns-tab-content {
+  display: none;
+}
+.ns-wrap .ns-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 48em) {
+  .ns-wrap .ns-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 80em) {
+  .ns-wrap .ns-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.ns-wrap .ns-grid h2,
+.ns-wrap .ns-grid h3 {
+  color: #333;
+}
+.ns-wrap .ns-grid p {
+  color: #555;
+}
+.ns-wrap .ns-grid h3 span {
+  margin-right: 5px;
+  color: #2271b1;
+}
+.ns-wrap .ns-card {
+  border: 1px #ddd solid;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+}
+.ns-wrap .ns-card ul,
+.ns-wrap .ns-card ol {
+  margin-left: 1.1em;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+.ns-wrap .ns-box {
+  margin-bottom: 40px;
+}
+.ns-wrap .ns-box ul,
+.ns-wrap .ns-box ol {
+  margin-left: 1.1em;
+  list-style-type: disc;
+  list-style-position: outside;
+}

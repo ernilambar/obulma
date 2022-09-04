@@ -29,7 +29,7 @@ var autoprefixer = require( 'gulp-autoprefixer' );
 var cleanCSS = require( 'gulp-clean-css' );
 
 gulp.task( 'style', function() {
-	return gulp.src( rootPath + 'sass/custom.scss' )
+	return gulp.src( rootPath + 'sass/*.scss' )
 		.on( 'error', sass.logError )
 		.pipe( plumber() )
 		.pipe( sass() )
