@@ -99,7 +99,6 @@ function obulma_primary_navigation_fallback() {
 	$the_query = new WP_Query( $qargs );
 
 	if ( $the_query->have_posts() ) {
-
 		while ( $the_query->have_posts() ) {
 			$the_query->the_post();
 			the_title( '<a class="navbar-item" href="' . esc_url( get_permalink() ) . '">', '</a>' );
