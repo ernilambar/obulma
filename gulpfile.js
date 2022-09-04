@@ -1,40 +1,39 @@
+// Dotenv.
+require( 'dotenv' ).config();
+
 // Config.
-const rootPath = './';
+var rootPath = './';
 
 // Gulp.
-const gulp = require( 'gulp' );
+var gulp = require( 'gulp' );
 
 // Browser sync.
-const browserSync = require( 'browser-sync' ).create();
+var browserSync = require( 'browser-sync' ).create();
 
 // SASS.
-const sass = require( 'gulp-sass' )( require( 'sass' ) );
+var sass = require( 'gulp-sass' )( require( 'sass' ) );
 
 // Plumber.
-const plumber = require( 'gulp-plumber' );
+var plumber = require( 'gulp-plumber' );
 
 // Rename.
-const rename = require( 'gulp-rename' );
+var rename = require( 'gulp-rename' );
 
 // Uglify.
-const uglify = require( 'gulp-uglify' );
+var uglify = require( 'gulp-uglify' );
 
 // Autoprefixer.
-const autoprefixer = require( 'gulp-autoprefixer' );
+var autoprefixer = require( 'gulp-autoprefixer' );
 
 // Clean CSS.
-const cleanCSS = require( 'gulp-clean-css' );
+var cleanCSS = require( 'gulp-clean-css' );
 
-// SASS Glob.
-const sassGlob = require( 'gulp-sass-glob' );
-
-gulp.task( 'scss', function() {
+gulp.task( 'style', function() {
 	return gulp.src( rootPath + 'sass/custom.scss' )
 		.on( 'error', sass.logError )
 		.pipe( plumber() )
-		.pipe( sassGlob() )
 		.pipe( sass() )
-		.pipe( autoprefixer( 'last 4 version' ) )
+		.pipe( autoprefixer() )
 		.pipe( gulp.dest( 'css' ) )
 		.pipe( cleanCSS() )
 		.pipe( rename( { extname: '.min.css' } ) )
@@ -56,7 +55,7 @@ gulp.task( 'watch', function() {
 	} );
 
 	// Watch SCSS files.
-	gulp.watch( rootPath + 'sass/**/*.scss', gulp.series( 'scss' ) ).on( 'change', browserSync.reload );
+	gulp.watch( rootPath + 'sass/**/*.scss', gulp.series( 'style' ) ).on( 'change', browserSync.reload );
 
 	// Watch PHP files.
 	gulp.watch( rootPath + '**/**/*.php' ).on( 'change', browserSync.reload );
@@ -67,7 +66,4 @@ gulp.task( 'watch', function() {
 
 // Tasks.
 gulp.task( 'default', gulp.series( 'watch' ) );
-
-gulp.task( 'style', gulp.series( 'scss' ) );
-
 gulp.task( 'build', gulp.series( 'style', 'scripts' ) );

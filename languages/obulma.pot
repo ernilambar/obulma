@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Obulma 1.0.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/obulma\n"
-"POT-Creation-Date: 2022-07-08 16:06:09+00:00\n"
+"POT-Creation-Date: 2022-09-04 09:16:25+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -48,15 +48,15 @@ msgstr ""
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: functions.php:58
+#: functions.php:57
 msgid "Primary"
 msgstr ""
 
-#: functions.php:157
+#: functions.php:156
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:159
+#: functions.php:158
 msgid "Add widgets here to appear in your sidebar."
 msgstr ""
 

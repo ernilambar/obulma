@@ -1,2 +1,7 @@
-node_modules
+deploy/
+node_modules/
+vendor/
+third-party/
+assets/
+js/
 scripts/navigation.js
