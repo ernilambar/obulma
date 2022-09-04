@@ -68,7 +68,6 @@ if ( post_password_required() ) {
 			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'obulma' ); ?></p>
 			<?php
 		endif;
-
 	endif; // Check for have_comments().
 
 	comment_form();

@@ -1,6 +1,22 @@
 {
-    "require": {
-        "ernilambar/wp-admin-notice": "^1.0",
-        "wptt/webfont-loader": "^1.1"
+  "require": {
+    "ernilambar/wp-admin-notice": "^1.0",
+    "wptt/webfont-loader": "^1.1"
+  },
+  "scripts": {
+    "pc:info": "phpcs -i",
+    "pc:config": "phpcs --config-show",
+    "lint": "phpcs .",
+    "lint:fix": "phpcbf ."
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "wp-coding-standards/wpcs": "^2.3"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
     }
+  }
 }

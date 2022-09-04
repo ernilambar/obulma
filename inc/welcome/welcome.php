@@ -16,6 +16,11 @@ function obulma_add_welcome_menu() {
 
 add_action( 'admin_menu', 'obulma_add_welcome_menu' );
 
+/**
+ * Render welcome page.
+ *
+ * @since 1.0.0
+ */
 function obulma_render_welcome_page() {
 	if ( ! current_user_can( 'edit_theme_options' ) ) {
 		return;
@@ -23,7 +28,7 @@ function obulma_render_welcome_page() {
 
 	$theme_data = wp_get_theme( 'obulma' );
 
-	$theme_uri = $theme_data->get('ThemeURI');
+	$theme_uri = $theme_data->get( 'ThemeURI' );
 	?>
 
 	<div class="wrap ns-wrap">
@@ -96,6 +101,13 @@ function obulma_render_welcome_page() {
 	<?php
 }
 
+/**
+ * Return blog posts list.
+ *
+ * @since 1.0.0
+ *
+ * @return array Posts list.
+ */
 function obulma_get_blog_feed_items() {
 	$output = array();
 
@@ -137,7 +149,7 @@ function obulma_load_welcome_assets( $hook ) {
 	}
 
 	wp_enqueue_style( 'obulma-welcome', get_template_directory_uri() . '/css/welcome.css', array(), OBULMA_VERSION );
-	wp_enqueue_script( 'obulma-blog-posts', get_template_directory_uri() . '/js/blog-posts.js', array('jquery'), OBULMA_VERSION, true );
+	wp_enqueue_script( 'obulma-blog-posts', get_template_directory_uri() . '/js/blog-posts.js', array( 'jquery' ), OBULMA_VERSION, true );
 }
 
 add_action( 'admin_enqueue_scripts', 'obulma_load_welcome_assets' );
