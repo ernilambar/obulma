@@ -47,6 +47,8 @@ npm-debug.log
 
 # Project folders
 build/
+css/
 deploy/
+js/
 vendor/
 node_modules/
