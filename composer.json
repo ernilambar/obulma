@@ -1,7 +1,8 @@
 {
   "require": {
     "ernilambar/wp-admin-notice": "^1.0",
-    "wptt/webfont-loader": "^1.1"
+    "wptt/webfont-loader": "^1.1",
+    "ernilambar/wp-welcome": "^1.0"
   },
   "scripts": {
     "pc:info": "phpcs -i",

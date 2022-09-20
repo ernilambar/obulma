@@ -52,7 +52,7 @@
 
 	$( '.ns-blog-list' ).blogPosts( {
 		api: ajaxurl,
-		action: 'nsbl_get_posts',
+		action: 'obulma_nsbl_get_posts',
 	} );
 }( jQuery ) );
 

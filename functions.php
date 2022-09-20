@@ -13,6 +13,7 @@ if ( ! defined( 'OBULMA_VERSION' ) ) {
 if ( file_exists( get_parent_theme_file_path( 'vendor/autoload.php' ) ) ) {
 	require_once get_parent_theme_file_path( 'vendor/autoload.php' );
 	require_once get_parent_theme_file_path( 'vendor/wptt/webfont-loader/wptt-webfont-loader.php' );
+	require_once get_parent_theme_file_path( 'vendor/ernilambar/wp-welcome/init.php' );
 }
 
 if ( ! function_exists( 'obulma_setup' ) ) :
@@ -216,6 +217,6 @@ require get_template_directory() . '/lib/navwalker/navwalker.php';
 require get_template_directory() . '/inc/helpers.php';
 
 /**
- * Load welcome.
+ * Load welcome page.
  */
-require get_template_directory() . '/inc/welcome/welcome.php';
+require get_template_directory() . '/inc/welcome.php';
