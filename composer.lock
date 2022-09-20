@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d4eeae50029ade7c6e42faf9377d037",
+    "content-hash": "05c565b2f467a2294db10777cf3b195c",
     "packages": [
         {
             "name": "ernilambar/wp-admin-notice",
@@ -52,6 +52,49 @@
                 "source": "https://github.com/ernilambar/wp-admin-notice/tree/1.0.0"
             },
             "time": "2022-06-27T07:08:52+00:00"
+        },
+        {
+            "name": "ernilambar/wp-welcome",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ernilambar/wp-welcome.git",
+                "reference": "8a34fdcd129166a47a4ed947dc4fc1b6fabce4c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ernilambar/wp-welcome/zipball/8a34fdcd129166a47a4ed947dc4fc1b6fabce4c3",
+                "reference": "8a34fdcd129166a47a4ed947dc4fc1b6fabce4c3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nilambar Sharma",
+                    "email": "nilambar@outlook.com",
+                    "homepage": "https://www.nilambar.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Create welcome page in WordPress. Useful for themes to showcase related information.",
+            "homepage": "https://github.com/ernilambar/wp-welcome",
+            "keywords": [
+                "plugin",
+                "theme",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/ernilambar/wp-welcome/issues",
+                "source": "https://github.com/ernilambar/wp-welcome/tree/1.0.0"
+            },
+            "time": "2022-09-20T15:55:05+00:00"
         },
         {
             "name": "wptt/webfont-loader",

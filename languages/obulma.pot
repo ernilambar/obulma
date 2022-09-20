@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Obulma 1.0.6\n"
+"Project-Id-Version: Obulma 1.0.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/obulma\n"
-"POT-Creation-Date: 2022-09-04 09:16:25+00:00\n"
+"POT-Creation-Date: 2022-09-20 16:07:45+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -106,18 +106,71 @@ msgstr ""
 msgid "Obulma"
 msgstr ""
 
-#: inc/template-tags.php:77
+#: inc/template-tags.php:75
 #. translators: %s: post title
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#: inc/template-tags.php:94 template-parts/content-page.php:39
+#: inc/template-tags.php:92 template-parts/content-page.php:39
 #. translators: %s: Name of current post. Only visible to screen readers
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/welcome/welcome.php:35
-msgid "Version: %s"
+#: inc/welcome.php:32
+msgid "Theme Details"
+msgstr ""
+
+#: inc/welcome.php:37 inc/welcome.php:64
+msgid "Get Support"
+msgstr ""
+
+#: inc/welcome.php:42 inc/welcome.php:171
+msgid "Leave a Review"
+msgstr ""
+
+#: inc/welcome.php:52
+msgid "Getting Started"
+msgstr ""
+
+#: inc/welcome.php:56
+msgid "Theme Options"
+msgstr ""
+
+#: inc/welcome.php:58
+msgid ""
+"Theme uses Customizer API for theme options. Using the Customizer you can "
+"easily customize different aspects of the theme."
+msgstr ""
+
+#: inc/welcome.php:59
+msgid "Go to Customizer"
+msgstr ""
+
+#: inc/welcome.php:66
+msgid ""
+"Got theme support question or found bug or got some feedbacks? Please visit "
+"support forum in the WordPress.org directory."
+msgstr ""
+
+#: inc/welcome.php:67
+msgid "Visit Support"
+msgstr ""
+
+#: inc/welcome.php:73
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/welcome.php:84
+msgid "Recommended Themes"
+msgstr ""
+
+#: inc/welcome.php:182
+#. translators: 1: Theme Name
+msgid "Are you are enjoying %1$s? We would appreciate a review."
+msgstr ""
+
+#: inc/welcome.php:185
+msgid "Submit Review"
 msgstr ""
 
 #: lib/navwalker/navwalker.php:273
@@ -137,18 +190,18 @@ msgstr ""
 msgid "Nothing Found"
 msgstr ""
 
-#: template-parts/content-none.php:24
+#: template-parts/content-none.php:23
 #. translators: 1: link to WP admin new post page.
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: template-parts/content-none.php:37
+#: template-parts/content-none.php:35
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: template-parts/content-none.php:44
+#: template-parts/content-none.php:41
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
@@ -196,7 +249,7 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/template-tags.php:59 inc/template-tags.php:65
+#: inc/template-tags.php:57 inc/template-tags.php:63
 #. translators: used between list items, there is a space after the comma
 msgctxt "list item separator"
 msgid ", "
