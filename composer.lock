@@ -55,16 +55,16 @@
         },
         {
             "name": "ernilambar/wp-welcome",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ernilambar/wp-welcome.git",
-                "reference": "8a34fdcd129166a47a4ed947dc4fc1b6fabce4c3"
+                "reference": "3ce051aa91324fbf3d3bf085083614a47cc3fd1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ernilambar/wp-welcome/zipball/8a34fdcd129166a47a4ed947dc4fc1b6fabce4c3",
-                "reference": "8a34fdcd129166a47a4ed947dc4fc1b6fabce4c3",
+                "url": "https://api.github.com/repos/ernilambar/wp-welcome/zipball/3ce051aa91324fbf3d3bf085083614a47cc3fd1b",
+                "reference": "3ce051aa91324fbf3d3bf085083614a47cc3fd1b",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ernilambar/wp-welcome/issues",
-                "source": "https://github.com/ernilambar/wp-welcome/tree/1.0.0"
+                "source": "https://github.com/ernilambar/wp-welcome/tree/1.0.1"
             },
-            "time": "2022-09-20T15:55:05+00:00"
+            "time": "2022-09-29T04:57:24+00:00"
         },
         {
             "name": "wptt/webfont-loader",

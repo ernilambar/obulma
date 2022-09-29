@@ -166,33 +166,25 @@ add_action( 'wp_ajax_obulma_nsbl_get_posts', 'obulma_get_blog_posts_ajax_callbac
  * @param Welcome $object Instance of Welcome class.
  */
 function obulma_render_welcome_page_sidebar( $object ) {
-	?>
-	<div class="wpw-box">
-		<h3><?php echo esc_html__( 'Leave a Review', 'obulma' ); ?></h3>
-		<div class="wpw-star">
-			<span class="dashicons-before dashicons-star-filled"></span>
-			<span class="dashicons-before dashicons-star-filled"></span>
-			<span class="dashicons-before dashicons-star-filled"></span>
-			<span class="dashicons-before dashicons-star-filled"></span>
-			<span class="dashicons-before dashicons-star-filled"></span>
-		</div>
-		<p>
-			<?php
-			/* translators: 1: Theme Name */
-			echo sprintf( esc_html__( 'Are you are enjoying %1$s? We would appreciate a review.', 'obulma' ), esc_html( $object->get_name() ) );
-			?>
-		</p>
-		<p><a href="https://wordpress.org/support/theme/obulma/reviews/#new-post" class="button" target="_blank"><?php echo esc_html__( 'Submit Review', 'obulma' ); ?></a></p>
-	</div>
-	<div class="wpw-box">
-		<h3>Recent Blog Posts</h3>
+	$object->render_sidebar_box(
+		array(
+			'title'        => esc_html__( 'Leave a Review', 'plunderscore' ),
+			'content'      => $object->get_stars() . sprintf( esc_html__( 'Are you are enjoying %1$s? We would appreciate a review.', 'plunderscore' ), $object->get_name() ),
+			'button_text'  => esc_html__( 'Submit Review', 'plunderscore' ),
+			'button_url'   => 'https://wordpress.org/support/theme/obulma/reviews/#new-post',
+			'button_class' => 'button',
+		),
+		$object
+	);
 
-		<div class="ns-blog-list"></div>
-
-	</div>
-	<?php
+	$object->render_sidebar_box(
+		array(
+			'title'   => 'Recent Blog Posts',
+			'content' => '<div class="ns-blog-list"></div>',
+		),
+		$object
+	);
 }
-
 
 /**
  * Load admin page assets.
