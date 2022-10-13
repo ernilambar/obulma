@@ -3,12 +3,12 @@
   "version": "1.0.8",
   "description": "Simple theme based on Bulma.",
   "author": "Nilambar Sharma",
-	"license": "MIT",
-	"repository": {
+  "license": "MIT",
+  "repository": {
     "type": "git",
     "url": "https://github.com/ernilambar/obulma/"
   },
-	"keywords": [
+  "keywords": [
     "theme",
     "wordpress"
   ],
@@ -17,7 +17,7 @@
     "build": "gulp build",
     "eslint": "eslint --quiet .",
     "eslint:fix": "eslint --quiet --fix .",
-		"format": "prettier --write \"sass/**/*.scss\"",
+    "format": "prettier --write \"sass/**/*.scss\"",
     "preinstall": "npx only-allow pnpm",
     "pot": "wpi18n makepot --domain-path=languages --exclude=vendor,deploy,node_modules",
     "textdomain": "wpi18n addtextdomain --exclude=vendor,deploy,node_modules",
@@ -28,7 +28,7 @@
     "wpdeploy": "wp-deployer"
   },
   "browserslist": "> 1%, not dead",
-	"prettier": "@wordpress/prettier-config",
+  "prettier": "@wordpress/prettier-config",
   "wpDeployer": {
     "repoType": "theme",
     "username": "rabmalin",
@@ -40,15 +40,15 @@
     "bulma": "^0.9.4"
   },
   "devDependencies": {
-    "@wordpress/eslint-plugin": "^13.0.0",
-    "@wordpress/prettier-config": "^2.0.0",
+    "@wordpress/eslint-plugin": "^13.3.0",
+    "@wordpress/prettier-config": "^2.2.0",
     "bestzip": "^2.2.1",
     "browser-sync": "^2.27.10",
     "copy-files-from-to": "^3.2.2",
     "cross-var": "^1.1.0",
-    "dotenv": "^16.0.2",
+    "dotenv": "^16.0.3",
     "easy-replace-in-files": "^1.0.3",
-    "eslint": "^8.23.0",
+    "eslint": "^8.25.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -58,7 +58,7 @@
     "gulp-uglify": "^3.0.2",
     "node-wp-i18n": "^1.2.6",
     "prettier": "^2.7.1",
-    "sass": "^1.54.8",
+    "sass": "^1.55.0",
     "shx": "^0.3.4",
     "wp-deployer": "^1.0.3"
   }
