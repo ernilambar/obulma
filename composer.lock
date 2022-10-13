@@ -59,12 +59,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ernilambar/wp-welcome.git",
-                "reference": "ba1f39f2b2341356614faee05a96ffcdb770236f"
+                "reference": "563fa973e88619c1339f93784ddbb1d4c4f3f7b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ernilambar/wp-welcome/zipball/ba1f39f2b2341356614faee05a96ffcdb770236f",
-                "reference": "ba1f39f2b2341356614faee05a96ffcdb770236f",
+                "url": "https://api.github.com/repos/ernilambar/wp-welcome/zipball/563fa973e88619c1339f93784ddbb1d4c4f3f7b0",
+                "reference": "563fa973e88619c1339f93784ddbb1d4c4f3f7b0",
                 "shasum": ""
             },
             "require": {
@@ -94,7 +94,7 @@
                 "issues": "https://github.com/ernilambar/wp-welcome/issues",
                 "source": "https://github.com/ernilambar/wp-welcome/tree/1.0.2"
             },
-            "time": "2022-10-11T14:32:56+00:00"
+            "time": "2022-10-13T09:53:56+00:00"
         },
         {
             "name": "wptt/webfont-loader",
