@@ -1,5 +1,7 @@
 {
+	"minimum-stability": "stable",
   "require": {
+		"php": ">=5.6",
     "ernilambar/wp-admin-notice": "^1.0",
     "wptt/webfont-loader": "^1.1",
     "ernilambar/wp-welcome": "^1.0"

@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Obulma 1.0.7\n"
+"Project-Id-Version: Obulma 1.0.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/obulma\n"
-"POT-Creation-Date: 2022-09-20 16:07:45+00:00\n"
+"POT-Creation-Date: 2022-10-13 09:19:38+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -116,61 +116,8 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/welcome.php:32
-msgid "Theme Details"
-msgstr ""
-
-#: inc/welcome.php:37 inc/welcome.php:64
-msgid "Get Support"
-msgstr ""
-
-#: inc/welcome.php:42 inc/welcome.php:171
-msgid "Leave a Review"
-msgstr ""
-
 #: inc/welcome.php:52
 msgid "Getting Started"
-msgstr ""
-
-#: inc/welcome.php:56
-msgid "Theme Options"
-msgstr ""
-
-#: inc/welcome.php:58
-msgid ""
-"Theme uses Customizer API for theme options. Using the Customizer you can "
-"easily customize different aspects of the theme."
-msgstr ""
-
-#: inc/welcome.php:59
-msgid "Go to Customizer"
-msgstr ""
-
-#: inc/welcome.php:66
-msgid ""
-"Got theme support question or found bug or got some feedbacks? Please visit "
-"support forum in the WordPress.org directory."
-msgstr ""
-
-#: inc/welcome.php:67
-msgid "Visit Support"
-msgstr ""
-
-#: inc/welcome.php:73
-msgid "Recommended Plugins"
-msgstr ""
-
-#: inc/welcome.php:84
-msgid "Recommended Themes"
-msgstr ""
-
-#: inc/welcome.php:182
-#. translators: 1: Theme Name
-msgid "Are you are enjoying %1$s? We would appreciate a review."
-msgstr ""
-
-#: inc/welcome.php:185
-msgid "Submit Review"
 msgstr ""
 
 #: lib/navwalker/navwalker.php:273

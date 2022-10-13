@@ -6,7 +6,7 @@
  */
 
 if ( ! defined( 'OBULMA_VERSION' ) ) {
-	define( 'OBULMA_VERSION', '1.0.7' );
+	define( 'OBULMA_VERSION', '1.0.8' );
 }
 
 // Load autoload.

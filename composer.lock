@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05c565b2f467a2294db10777cf3b195c",
+    "content-hash": "783c8b8bb5132c489be90c2ade52f2ba",
     "packages": [
         {
             "name": "ernilambar/wp-admin-notice",
@@ -55,16 +55,16 @@
         },
         {
             "name": "ernilambar/wp-welcome",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ernilambar/wp-welcome.git",
-                "reference": "3ce051aa91324fbf3d3bf085083614a47cc3fd1b"
+                "reference": "ba1f39f2b2341356614faee05a96ffcdb770236f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ernilambar/wp-welcome/zipball/3ce051aa91324fbf3d3bf085083614a47cc3fd1b",
-                "reference": "3ce051aa91324fbf3d3bf085083614a47cc3fd1b",
+                "url": "https://api.github.com/repos/ernilambar/wp-welcome/zipball/ba1f39f2b2341356614faee05a96ffcdb770236f",
+                "reference": "ba1f39f2b2341356614faee05a96ffcdb770236f",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ernilambar/wp-welcome/issues",
-                "source": "https://github.com/ernilambar/wp-welcome/tree/1.0.1"
+                "source": "https://github.com/ernilambar/wp-welcome/tree/1.0.2"
             },
-            "time": "2022-09-29T04:57:24+00:00"
+            "time": "2022-10-11T14:32:56+00:00"
         },
         {
             "name": "wptt/webfont-loader",
@@ -577,7 +577,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.6"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
 }
