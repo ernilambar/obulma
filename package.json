@@ -1,9 +1,17 @@
 {
   "name": "obulma",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Simple theme based on Bulma.",
   "author": "Nilambar Sharma",
-  "repository": "github:ernilambar/obulma",
+	"license": "MIT",
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/ernilambar/obulma/"
+  },
+	"keywords": [
+    "theme",
+    "wordpress"
+  ],
   "scripts": {
     "dev": "pnpm run build && gulp",
     "build": "gulp build",
@@ -20,11 +28,17 @@
     "wpdeploy": "wp-deployer"
   },
   "browserslist": "> 1%, not dead",
-  "keywords": [
-    "theme",
-    "wordpress"
-  ],
-  "license": "MIT",
+	"prettier": "@wordpress/prettier-config",
+  "wpDeployer": {
+    "repoType": "theme",
+    "username": "rabmalin",
+    "buildDir": "deploy/obulma",
+    "earlierVersion": "1.0.7",
+    "deployAssets": false
+  },
+  "dependencies": {
+    "bulma": "^0.9.4"
+  },
   "devDependencies": {
     "@wordpress/eslint-plugin": "^13.0.0",
     "@wordpress/prettier-config": "^2.0.0",
@@ -47,16 +61,5 @@
     "sass": "^1.54.8",
     "shx": "^0.3.4",
     "wp-deployer": "^1.0.3"
-  },
-  "dependencies": {
-    "bulma": "^0.9.4"
-  },
-  "wpDeployer": {
-    "repoType": "theme",
-    "username": "rabmalin",
-    "buildDir": "deploy/obulma",
-    "earlierVersion": "1.0.6",
-    "deployAssets": false
-  },
-  "prettier": "@wordpress/prettier-config"
+  }
 }

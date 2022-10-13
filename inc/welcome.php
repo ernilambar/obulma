@@ -29,17 +29,17 @@ add_action(
 		$obj->set_quick_links(
 			array(
 				array(
-					'text' => esc_html__( 'Theme Details', 'obulma' ),
+					'text' => 'Theme Details',
 					'url'  => 'https://www.nilambar.net/2019/12/obulma-free-wordpress-theme.html',
 					'type' => 'primary',
 				),
 				array(
-					'text' => esc_html__( 'Get Support', 'obulma' ),
+					'text' => 'Get Support',
 					'url'  => 'https://wordpress.org/support/theme/obulma/#new-post',
 					'type' => 'secondary',
 				),
 				array(
-					'text' => esc_html__( 'Leave a Review', 'obulma' ),
+					'text' => 'Leave a Review',
 					'url'  => 'https://wordpress.org/support/theme/obulma/reviews/#new-post',
 					'type' => 'secondary',
 				),
@@ -53,24 +53,24 @@ add_action(
 				'type'  => 'grid',
 				'items' => array(
 					array(
-						'title'       => esc_html__( 'Theme Options', 'obulma' ),
+						'title'       => 'Theme Options',
 						'icon'        => 'dashicons dashicons-admin-customizer',
-						'description' => esc_html__( 'Theme uses Customizer API for theme options. Using the Customizer you can easily customize different aspects of the theme.', 'obulma' ),
-						'button_text' => esc_html__( 'Go to Customizer', 'obulma' ),
+						'description' => 'Theme uses Customizer API for theme options. Using the Customizer you can easily customize different aspects of the theme.',
+						'button_text' => 'Go to Customizer',
 						'button_url'  => wp_customize_url(),
 						'button_type' => 'primary',
 					),
 					array(
-						'title'       => esc_html__( 'Get Support', 'obulma' ),
+						'title'       => 'Get Support',
 						'icon'        => 'dashicons dashicons-editor-help',
-						'description' => esc_html__( 'Got theme support question or found bug or got some feedbacks? Please visit support forum in the WordPress.org directory.', 'obulma' ),
-						'button_text' => esc_html__( 'Visit Support', 'obulma' ),
+						'description' => 'Got theme support question or found bug or got some feedbacks? Please visit support forum in the WordPress.org directory.',
+						'button_text' => 'Visit Support',
 						'button_url'  => 'https://wordpress.org/support/theme/obulma/#new-post',
 						'button_type' => 'secondary',
 						'is_new_tab'  => true,
 					),
 					array(
-						'title'       => esc_html__( 'Recommended Plugins', 'obulma' ),
+						'title'       => 'Recommended Plugins',
 						'icon'        => 'dashicons dashicons-admin-plugins',
 						'description' => '<ul>
 													<li><a href="https://wordpress.org/plugins/woocommerce-product-tabs/" target="_blank">WooCommerce Product Tabs</a></li>
@@ -81,7 +81,7 @@ add_action(
 												</ul>',
 					),
 					array(
-						'title'       => esc_html__( 'Recommended Themes', 'obulma' ),
+						'title'       => 'Recommended Themes',
 						'icon'        => 'dashicons dashicons-desktop',
 						'description' => '<ul><li><a href="https://wordpress.org/themes/simple-life/" target="_blank">Simple Life</a></li> <li><a href="https://wordpress.org/themes/obulma/" target="_blank">Obulma</a></li> <li><a href="https://wordpress.org/themes/blue-planet/" target="_blank">Blue Planet</a></li></ul>',
 					),
@@ -168,9 +168,9 @@ add_action( 'wp_ajax_obulma_nsbl_get_posts', 'obulma_get_blog_posts_ajax_callbac
 function obulma_render_welcome_page_sidebar( $object ) {
 	$object->render_sidebar_box(
 		array(
-			'title'        => esc_html__( 'Leave a Review', 'plunderscore' ),
-			'content'      => $object->get_stars() . sprintf( esc_html__( 'Are you are enjoying %1$s? We would appreciate a review.', 'plunderscore' ), $object->get_name() ),
-			'button_text'  => esc_html__( 'Submit Review', 'plunderscore' ),
+			'title'        => 'Leave a Review',
+			'content'      => $object->get_stars() . sprintf( 'Are you are enjoying %s? We would appreciate a review.', $object->get_name() ),
+			'button_text'  => 'Submit Review',
 			'button_url'   => 'https://wordpress.org/support/theme/obulma/reviews/#new-post',
 			'button_class' => 'button',
 		),
