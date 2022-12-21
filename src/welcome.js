@@ -1,6 +1,6 @@
 ( function( $ ) {
 	$.fn.blogPosts = function( options ) {
-		var settings = $.extend( {
+		const settings = $.extend( {
 			api: '',
 			action: 'blog_posts',
 			loading_text: 'Loading',
@@ -12,7 +12,7 @@
 		}
 
 		function generateList( data ) {
-			var output = '';
+			let output = '';
 
 			if ( 0 === data.length ) {
 				return output;
@@ -26,23 +26,23 @@
 		}
 
 		return this.each( function() {
-			var $wrapper = $( this );
+			const $wrapper = $( this );
 
 			$.ajax( {
 				url: settings.api,
 				type: 'GET',
 				dataType: 'json',
 				data: { action: settings.action },
-				beforeSend: function() {
+				beforeSend() {
 					$wrapper.html( settings.loading_text );
 				},
-				complete: function( jqXHR ) {
-					var response = JSON.parse( jqXHR.responseText );
+				complete( jqXHR ) {
+					const response = JSON.parse( jqXHR.responseText );
 
 					$wrapper.html( '' );
 
 					if ( true === response.success ) {
-						var listMarkup = generateList( response.data );
+						const listMarkup = generateList( response.data );
 						$wrapper.append( listMarkup );
 					}
 				},
