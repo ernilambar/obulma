@@ -3,7 +3,7 @@
     "browser": true,
     "node": true
   },
-  "extends": ["plugin:@wordpress/eslint-plugin/es5"],
+  "extends": ["plugin:@wordpress/eslint-plugin/esnext"],
   "parserOptions": {
     "requireConfigFile": false
   },

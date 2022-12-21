@@ -200,7 +200,7 @@ function obulma_load_welcome_assets( $hook ) {
 
 	$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
-	wp_enqueue_script( 'obulma-blog-posts', get_template_directory_uri() . '/js/blog-posts' . $min . '.js', array( 'jquery' ), OBULMA_VERSION, true );
+	wp_enqueue_script( 'obulma-welcome', get_template_directory_uri() . '/build/welcome' . $min . '.js', array( 'jquery' ), OBULMA_VERSION, true );
 }
 
 add_action( 'admin_enqueue_scripts', 'obulma_load_welcome_assets' );

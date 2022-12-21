@@ -1,20 +1,23 @@
 <?php
 /**
- * Obulma Theme Customizer
+ * Theme Customizer
  *
  * @package Obulma
  */
 
 /**
- * Add postMessage support for site title and description for the Theme Customizer.
+ * Setup theme Customizer.
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function obulma_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
+	$wp_customize->get_setting( 'blogname' )->transport        = 'refresh';
+	$wp_customize->get_setting( 'blogdescription' )->transport = 'refresh';
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
+		$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
+		$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
+
 		$wp_customize->selective_refresh->add_partial(
 			'blogname',
 			array(
@@ -51,12 +54,3 @@ function obulma_customize_partial_blogname() {
 function obulma_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
-
-/**
- * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
- */
-function obulma_customize_preview_js() {
-	wp_enqueue_script( 'obulma-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '1.0.4', true );
-}
-
-add_action( 'customize_preview_init', 'obulma_customize_preview_js' );

@@ -178,11 +178,9 @@ function obulma_scripts() {
 
 	wp_enqueue_style( 'obulma-style', get_stylesheet_uri(), array(), OBULMA_VERSION );
 
-	wp_enqueue_style( 'obulma-custom', get_template_directory_uri() . '/css/custom' . $min . '.css', array( 'obulma-style' ), OBULMA_VERSION );
+	wp_enqueue_style( 'obulma-custom', get_template_directory_uri() . '/build/custom' . $min . '.css', array( 'obulma-style' ), OBULMA_VERSION );
 
-	wp_enqueue_script( 'obulma-navigation', get_template_directory_uri() . '/js/navigation' . $min . '.js', array(), '20151215', true );
-
-	wp_enqueue_script( 'obulma-custom', get_template_directory_uri() . '/js/custom' . $min . '.js', array( 'jquery' ), OBULMA_VERSION, true );
+	wp_enqueue_script( 'obulma-custom', get_template_directory_uri() . '/build/custom' . $min . '.js', array( 'jquery' ), OBULMA_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

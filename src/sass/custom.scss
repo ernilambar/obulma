@@ -12,7 +12,7 @@ $size-6: 1em;
 
 $link: #3273dc;
 
-@import "../node_modules/bulma/bulma.sass";
+@import "bulma";
 
 @import "theme/typography.scss";
 @import "theme/core.scss";
