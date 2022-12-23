@@ -58,11 +58,22 @@
 .widget-area {
 	.wp-block-latest-posts.wp-block-latest-posts__list {
 		list-style: inherit;
-		padding-left: 1.5em;
+		padding-left: 1em;
 	}
 
 	ul.wp-block-rss.wp-block-rss {
 		list-style-position: outside;
-		margin-left: 1.5em;
+		margin-left: 1em;
+	}
+
+	.wp-calendar-table caption {
+		font-weight: 600;
+		margin-bottom: 5px;
+	}
+
+	.wp-calendar-nav {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 5px;
 	}
 }
