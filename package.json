@@ -13,7 +13,7 @@
     "wordpress"
   ],
   "scripts": {
-		"dev": "webpack --watch",
+    "dev": "webpack --watch",
     "build": "cross-env NODE_ENV=production webpack",
     "prod": "pnpm run build && pnpm run minify:css && pnpm run minify:js",
     "minify:css": "cleancss --batch --batch-suffix '.min' build/*.css",
@@ -43,8 +43,8 @@
     "bulma": "^0.9.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.19.3",
-    "@babel/core": "^7.20.5",
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
     "@wordpress/eslint-plugin": "^13.7.0",
     "@wordpress/prettier-config": "^2.6.0",
