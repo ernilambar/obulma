@@ -23,6 +23,9 @@ module.exports = {
 	externals: {
 		jquery: 'jQuery',
 	},
+	performance: {
+    hints: false
+  },
 	mode: isProd ? 'production' : 'development',
 	devtool: isProd ? false : 'source-map',
 	module: {
