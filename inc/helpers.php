@@ -109,4 +109,3 @@ function obulma_primary_navigation_fallback() {
 
 	echo '</div>';
 }
-
