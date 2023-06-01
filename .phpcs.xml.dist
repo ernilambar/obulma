@@ -41,10 +41,6 @@
     <exclude name="WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents"/>
 	</rule>
 
-	<rule ref="WPThemeReview"/>
-
-	<rule ref="WordPress.CodeAnalysis.EmptyStatement"/>
-
   <rule ref="WordPress.WhiteSpace.ControlStructureSpacing">
     <properties>
       <property name="blank_line_check" value="true"/>

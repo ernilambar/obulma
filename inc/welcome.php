@@ -163,26 +163,26 @@ add_action( 'wp_ajax_obulma_nsbl_get_posts', 'obulma_get_blog_posts_ajax_callbac
  *
  * @since 1.0.0
  *
- * @param Welcome $object Instance of Welcome class.
+ * @param Welcome $welcome_object Instance of Welcome class.
  */
-function obulma_render_welcome_page_sidebar( $object ) {
-	$object->render_sidebar_box(
+function obulma_render_welcome_page_sidebar( $welcome_object ) {
+	$welcome_object->render_sidebar_box(
 		array(
 			'title'        => 'Leave a Review',
-			'content'      => $object->get_stars() . sprintf( 'Are you are enjoying %s? We would appreciate a review.', $object->get_name() ),
+			'content'      => $welcome_object->get_stars() . sprintf( 'Are you are enjoying %s? We would appreciate a review.', $welcome_object->get_name() ),
 			'button_text'  => 'Submit Review',
 			'button_url'   => 'https://wordpress.org/support/theme/obulma/reviews/#new-post',
 			'button_class' => 'button',
 		),
-		$object
+		$welcome_object
 	);
 
-	$object->render_sidebar_box(
+	$welcome_object->render_sidebar_box(
 		array(
 			'title'   => 'Recent Blog Posts',
 			'content' => '<div class="ns-blog-list"></div>',
 		),
-		$object
+		$welcome_object
 	);
 }
 
