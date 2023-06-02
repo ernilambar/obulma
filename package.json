@@ -1,6 +1,6 @@
 {
   "name": "obulma",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Simple theme based on Bulma.",
   "author": "Nilambar Sharma",
   "license": "MIT",
@@ -26,8 +26,8 @@
     "pot": "wpi18n makepot --domain-path=languages --exclude=vendor,deploy,node_modules",
     "textdomain": "wpi18n addtextdomain --exclude=vendor,deploy,node_modules",
     "version": "easy-replace-in-files",
-		"ready:build": "shx rm -rf build/ && pnpm run prod",
-		"ready:vendor": "shx rm -rf vendor/ && composer install --no-dev --no-scripts -o",
+    "ready:build": "shx rm -rf build/ && pnpm run prod",
+    "ready:vendor": "shx rm -rf vendor/ && composer install --no-dev --no-scripts -o",
     "predeploy": "pnpm run ready:vendor && pnpm run ready:build",
     "deploy": "packtor",
     "prewpdeploy": "pnpm run deploy",
@@ -35,21 +35,21 @@
   },
   "browserslist": "> 1%, not dead",
   "prettier": "@wordpress/prettier-config",
-	"packtor": {
-		"files": [
-			"**/*",
-			"!*.js",
-			"!*.json",
-			"!*.lock",
-			"!*.yaml",
-			"!src/**/*"
-		]
-	},
+  "packtor": {
+    "files": [
+      "**/*",
+      "!*.js",
+      "!*.json",
+      "!*.lock",
+      "!*.yaml",
+      "!src/**/*"
+    ]
+  },
   "wpDeployer": {
     "repoType": "theme",
     "username": "rabmalin",
     "buildDir": "deploy/obulma",
-    "earlierVersion": "1.0.9",
+    "earlierVersion": "1.0.10",
     "deployAssets": false
   },
   "dependencies": {
@@ -73,10 +73,10 @@
     "eslint": "^8.41.0",
     "mini-css-extract-plugin": "^2.7.6",
     "node-wp-i18n": "^1.2.7",
-    "packtor": "^1.0.1",
+    "packtor": "^1.0.2",
     "postcss": "^8.4.24",
     "postcss-loader": "^7.3.2",
-    "postcss-preset-env": "^8.4.1",
+    "postcss-preset-env": "^8.4.2",
     "prettier": "^2.8.8",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.1",
