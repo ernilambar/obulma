@@ -169,7 +169,7 @@ function obulma_render_welcome_page_sidebar( $welcome_object ) {
 	$welcome_object->render_sidebar_box(
 		array(
 			'title'        => 'Leave a Review',
-			'content'      => $welcome_object->get_stars() . sprintf( 'Are you are enjoying %s? We would appreciate a review.', $welcome_object->get_name() ),
+			'content'      => $welcome_object->get_stars() . sprintf( 'Are you enjoying %s? We would appreciate a review.', $welcome_object->get_name() ),
 			'button_text'  => 'Submit Review',
 			'button_url'   => 'https://wordpress.org/support/theme/obulma/reviews/#new-post',
 			'button_class' => 'button',
