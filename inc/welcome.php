@@ -9,7 +9,7 @@ use Nilambar\Welcome\Welcome;
 
 add_action(
 	'wp_welcome_init',
-	function() {
+	function () {
 		$obj = new Welcome( 'theme', 'obulma' );
 
 		$obj->set_page(
