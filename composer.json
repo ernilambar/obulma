@@ -17,10 +17,10 @@
 		"compat": "@php ./vendor/bin/phpcs --standard=.phpcompat.xml.dist --report-full --report-summary ."
   },
   "require-dev": {
-    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
-    "phpcompatibility/phpcompatibility-wp": "^2.1",
-    "wp-coding-standards/wpcs": "dev-develop"
-  },
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+		"wp-coding-standards/wpcs": "^3.0"
+	},
   "config": {
 		"sort-packages": true,
     "allow-plugins": {
