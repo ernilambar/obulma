@@ -1,9 +1,9 @@
 === Obulma ===
 
 Contributors: rabmalin
-Requires at least: 4.9
-Tested up to: 6.2
-Requires PHP: 5.6
+Requires at least: 6.0
+Tested up to: 6.6
+Requires PHP: 7.0
 Stable tag: 1.0.11
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -29,7 +29,7 @@ This theme uses Bulma CSS framework. Bulma is a free, open source CSS framework 
 
 == Copyright ==
 
-Obulma WordPress Theme, Copyright 2020 Nilambar Sharma
+Obulma WordPress Theme, Copyright 2024 Nilambar Sharma
 Obulma is distributed under the terms of the GNU GPL
 
 == Changelog ==
