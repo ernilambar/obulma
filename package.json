@@ -1,6 +1,6 @@
 {
   "name": "obulma",
-  "version": "1.0.11",
+  "version": "2.0.0",
   "description": "Simple theme based on Bulma.",
   "author": "Nilambar Sharma",
   "license": "MIT",
@@ -48,7 +48,7 @@
     "repoType": "theme",
     "username": "rabmalin",
     "buildDir": "deploy/obulma",
-    "earlierVersion": "1.0.10",
+    "earlierVersion": "1.0.11",
     "deployAssets": false
   },
   "dependencies": {
