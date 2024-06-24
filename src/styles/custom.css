@@ -1,0 +1,5 @@
+@import "bulma";
+
+@import "./theme/variables.css";
+
+@import "./theme/responsive.css";
