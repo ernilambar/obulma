@@ -3,7 +3,7 @@ require( 'dotenv' ).config();
 const themePath = './';
 const path = require( 'path' );
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
-const BrowserSyncPlugin = require( 'browser-sync-webpack-plugin' );
+const BrowserSyncPlugin = require( 'browser-sync-v3-webpack-plugin' );
 const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
 
 const isProd = process.env.NODE_ENV === 'production';
@@ -24,8 +24,8 @@ module.exports = {
 		jquery: 'jQuery',
 	},
 	performance: {
-    hints: false
-  },
+		hints: false,
+	},
 	mode: isProd ? 'production' : 'development',
 	devtool: isProd ? false : 'source-map',
 	module: {
@@ -49,9 +49,7 @@ module.exports = {
 						loader: 'postcss-loader',
 						options: {
 							postcssOptions: {
-								plugins: [
-									[ 'postcss-preset-env' ],
-								],
+								plugins: [ [ 'postcss-preset-env' ] ],
 							},
 						},
 					},
@@ -66,7 +64,7 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(png|svg|jpg|jpeg|gif)$/,
+				test: /\.(png|svg|jpg|jpeg|gif|webp)$/,
 				type: 'asset/resource',
 				generator: {
 					filename: 'images/[name][ext]',
@@ -88,6 +86,7 @@ module.exports = {
 			files: [ '**/*.php' ],
 			injectChanges: true,
 			proxy: process.env.DEV_SERVER_URL,
+			open: 'yes' === process.env.BROWSERSYNC_OPEN ? true : false,
 		} ),
 	],
 	optimization: {

@@ -5,7 +5,7 @@ import './sass/custom.scss';
  * navigation support for dropdown menus.
  */
 /* eslint-disable */
-( function() {
+( function () {
 	let container, button, menu, links, i, len;
 
 	container = document.getElementById( 'site-navigation' );
@@ -31,7 +31,7 @@ import './sass/custom.scss';
 		menu.className += ' nav-menu';
 	}
 
-	button.onclick = function() {
+	button.onclick = function () {
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
@@ -78,22 +78,31 @@ import './sass/custom.scss';
 	 *
 	 * @param container
 	 */
-	( function( container ) {
-		let touchStartFn, i,
-			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
+	( function ( container ) {
+		let touchStartFn,
+			i,
+			parentLink = container.querySelectorAll(
+				'.menu-item-has-children > a, .page_item_has_children > a'
+			);
 
 		if ( 'ontouchstart' in window ) {
-			touchStartFn = function( e ) {
+			touchStartFn = function ( e ) {
 				let menuItem = this.parentNode,
 					i;
 
 				if ( ! menuItem.classList.contains( 'focus' ) ) {
 					e.preventDefault();
-					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
+					for (
+						i = 0;
+						i < menuItem.parentNode.children.length;
+						++i
+					) {
 						if ( menuItem === menuItem.parentNode.children[ i ] ) {
 							continue;
 						}
-						menuItem.parentNode.children[ i ].classList.remove( 'focus' );
+						menuItem.parentNode.children[ i ].classList.remove(
+							'focus'
+						);
 					}
 					menuItem.classList.add( 'focus' );
 				} else {
@@ -102,18 +111,22 @@ import './sass/custom.scss';
 			};
 
 			for ( i = 0; i < parentLink.length; ++i ) {
-				parentLink[ i ].addEventListener( 'touchstart', touchStartFn, false );
+				parentLink[ i ].addEventListener(
+					'touchstart',
+					touchStartFn,
+					false
+				);
 			}
 		}
-	}( container ) );
-}() );
+	} )( container );
+} )();
 /* eslint-enable */
 
-( function( $ ) {
-	$( document ).ready( function() {
-		$( '.navbar-burger' ).on( 'click', function() {
+( function ( $ ) {
+	$( document ).ready( function () {
+		$( '.navbar-burger' ).on( 'click', function () {
 			$( '.navbar-burger' ).toggleClass( 'is-active' );
 			$( '.navbar-menu' ).toggleClass( 'is-active' );
 		} );
 	} );
-}( jQuery ) );
+} )( jQuery );

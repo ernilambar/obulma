@@ -1,11 +1,14 @@
-( function( $ ) {
-	$.fn.blogPosts = function( options ) {
-		const settings = $.extend( {
-			api: '',
-			action: 'blog_posts',
-			loading_text: 'Loading',
-			list_type: 'ul',
-		}, options );
+( function ( $ ) {
+	$.fn.blogPosts = function ( options ) {
+		const settings = $.extend(
+			{
+				api: '',
+				action: 'blog_posts',
+				loading_text: 'Loading',
+				list_type: 'ul',
+			},
+			options
+		);
 
 		if ( '' === settings.api ) {
 			return this;
@@ -18,14 +21,19 @@
 				return output;
 			}
 
-			data.forEach( function( item ) {
-				output += '<li><a href="' + item.url + '" target="_blank">' + item.title + '</a></li>';
+			data.forEach( function ( item ) {
+				output +=
+					'<li><a href="' +
+					item.url +
+					'" target="_blank">' +
+					item.title +
+					'</a></li>';
 			} );
 
 			return $( '<' + settings.list_type + '/>' ).append( output );
 		}
 
-		return this.each( function() {
+		return this.each( function () {
 			const $wrapper = $( this );
 
 			$.ajax( {
@@ -54,5 +62,4 @@
 		api: ajaxurl,
 		action: 'obulma_nsbl_get_posts',
 	} );
-}( jQuery ) );
-
+} )( jQuery );
