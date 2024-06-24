@@ -1,17 +1,45 @@
-# <!=Copyright (C) 2023 Nilambar Sharma
-# This file is distributed under the GNU General Public License v2 or later.=!>
+# Copyright (C) 2024 Nilambar Sharma
+# This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Obulma 1.0.11\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/obulma\n"
-"POT-Creation-Date: 2023-06-02 06:14:39+00:00\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: node-wp-i18n 1.2.7\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: obulma\n"
+
+#. Theme Name of the theme
+#: style.css
+#: inc/template-functions.php:145
+#: inc/welcome.php:17
+msgid "Obulma"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://www.nilambar.net/2019/12/obulma-free-wordpress-theme.html"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Obulma is a simple blogging WordPress theme. With clean and minimal design it is mainly targeted for blogging sites. It uses the Bulma CSS framework. It is cross browser compatible and responsive and looks beautiful on any device and screen sizes. Due to its elegant design users will have a pleasant experience reading your blog posts and articles."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Nilambar Sharma"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://www.nilambar.net/"
+msgstr ""
 
 #: 404.php:19
 msgid "Oops! That page can&rsquo;t be found."
@@ -21,10 +49,18 @@ msgstr ""
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
-#: comments.php:35
 #. translators: 1: title.
+#: comments.php:35
 msgid "One thought on &ldquo;%1$s&rdquo;"
 msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
 
 #: comments.php:68
 msgid "Comments are closed."
@@ -38,13 +74,13 @@ msgstr ""
 msgid "https://wordpress.org/"
 msgstr ""
 
-#: footer.php:28
 #. translators: %s: CMS name, i.e. WordPress.
+#: footer.php:28
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: footer.php:34
 #. translators: 1: Theme name, 2: Theme author.
+#: footer.php:34
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
@@ -68,11 +104,13 @@ msgstr ""
 msgid "Main Navigation"
 msgstr ""
 
-#: inc/helpers.php:73 single.php:24
+#: inc/helpers.php:73
+#: single.php:24
 msgid "Previous"
 msgstr ""
 
-#: inc/helpers.php:77 single.php:25
+#: inc/helpers.php:77
+#: single.php:25
 msgid "Next"
 msgstr ""
 
@@ -93,26 +131,28 @@ msgid "Website"
 msgstr ""
 
 #: inc/template-functions.php:109
-msgid ""
-"Save my name, email, and website in this browser for the next time I "
-"comment."
+msgid "Save my name, email, and website in this browser for the next time I comment."
 msgstr ""
 
 #: inc/template-functions.php:127
 msgid "Comment"
 msgstr ""
 
-#. Theme Name of the plugin/theme
-msgid "Obulma"
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:57
+#: inc/template-tags.php:63
+msgctxt "list item separator"
+msgid ", "
 msgstr ""
 
-#: inc/template-tags.php:75
 #. translators: %s: post title
+#: inc/template-tags.php:75
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#: inc/template-tags.php:92 template-parts/content-page.php:39
 #. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:92
+#: template-parts/content-page.php:39
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
@@ -124,82 +164,9 @@ msgstr ""
 msgid "Add a menu"
 msgstr ""
 
-#: search.php:22
 #. translators: %s: search query.
+#: search.php:22
 msgid "Search Results for: %s"
-msgstr ""
-
-#: searchform.php:17
-msgid "Search"
-msgstr ""
-
-#: template-parts/content-none.php:14
-msgid "Nothing Found"
-msgstr ""
-
-#: template-parts/content-none.php:23
-#. translators: 1: link to WP admin new post page.
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: template-parts/content-none.php:35
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-
-#: template-parts/content-none.php:41
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-
-#: template-parts/content-page.php:25 template-parts/content-single.php:53
-msgid "Pages:"
-msgstr ""
-
-#: template-parts/content-single.php:40
-#. translators: %s: Name of current post. Only visible to screen readers
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
-
-#: template-parts/content.php:37
-msgid "Read More"
-msgstr ""
-
-#. Theme URI of the plugin/theme
-msgid "https://www.nilambar.net/2019/12/obulma-free-wordpress-theme.html"
-msgstr ""
-
-#. Description of the plugin/theme
-msgid ""
-"Obulma is a simple blogging WordPress theme. With clean and minimal design "
-"it is mainly targeted for blogging sites. It uses the Bulma CSS framework. "
-"It is cross browser compatible and responsive and looks beautiful on any "
-"device and screen sizes. Due to its elegant design users will have a "
-"pleasant experience reading your blog posts and articles."
-msgstr ""
-
-#. Author of the plugin/theme
-msgid "Nilambar Sharma"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "https://www.nilambar.net/"
-msgstr ""
-
-#: comments.php:41
-#. translators: 1: comment count number, 2: title.
-msgctxt "comments title"
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
-
-#: inc/template-tags.php:57 inc/template-tags.php:63
-#. translators: used between list items, there is a space after the comma
-msgctxt "list item separator"
-msgid ", "
 msgstr ""
 
 #: searchform.php:13
@@ -210,4 +177,39 @@ msgstr ""
 #: searchform.php:14
 msgctxt "placeholder"
 msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:17
+msgid "Search"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:23
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:35
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:41
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:25
+#: template-parts/content-single.php:53
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-single.php:40
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content.php:37
+msgid "Read More"
 msgstr ""

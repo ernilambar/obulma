@@ -1,30 +1,30 @@
 {
 	"name": "ernilambar/obulma",
-  "description": "Obulma",
-  "license": "GPL-2.0-or-later",
-  "require": {
-    "php": ">=5.6",
-    "ernilambar/wp-admin-notice": "^1.0",
-    "ernilambar/wp-welcome": "^1.0",
-    "wptt/webfont-loader": "^1.1"
-  },
-  "scripts": {
-    "pc:info": "@php ./vendor/bin/phpcs -i",
-    "pc:config": "@php ./vendor/bin/phpcs --config-show",
-		"lint": "@php ./vendor/bin/phpcs --report-full --report-summary .",
-		"lint:error": "@lint -n",
-    "lint:fix": "@php ./vendor/bin/phpcbf --report-full --report-summary .",
-		"compat": "@php ./vendor/bin/phpcs --standard=.phpcompat.xml.dist --report-full --report-summary ."
-  },
-  "require-dev": {
+	"description": "Obulma",
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"php": ">=7.0",
+		"ernilambar/wp-admin-notice": "^1.0",
+		"ernilambar/wp-welcome": "^1.0",
+		"wptt/webfont-loader": "^1.1"
+	},
+	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
 		"phpcompatibility/phpcompatibility-wp": "^2.1",
-		"wp-coding-standards/wpcs": "^3.0"
+		"wp-cli/i18n-command": "^2.6",
+		"wp-coding-standards/wpcs": "^3.1"
 	},
-  "config": {
-		"sort-packages": true,
-    "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": true
-    }
-  }
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"ergebnis/composer-normalize": true
+		},
+		"optimize-autoloader": true,
+		"sort-packages": true
+	},
+	"scripts": {
+		"phpcbf": "@php ./vendor/bin/phpcbf --report-full --report-summary .",
+		"phpcs": "@php ./vendor/bin/phpcs --report-full --report-summary .",
+		"pot": "wp i18n make-pot . --exclude=build,deploy,node_modules,vendor --headers='{\"POT-Creation-Date\":\"\"}'"
+	}
 }
