@@ -1,0 +1,61 @@
+.header-content {
+	margin-bottom: 20px;
+}
+
+.entry-title a {
+	color: var(--bulma-text);
+
+	&:hover {
+		color: var(--bulma-link);
+	}
+}
+
+.entry-header {
+	margin-bottom: 10px;
+}
+
+.entry-meta span::before,
+.entry-footer span::before {
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	height: 15px;
+	font-size: 12px;
+	font-style: normal;
+	content: "";
+	margin-right: 5px;
+}
+
+.entry-meta > span,
+.entry-footer > span {
+	font-size: 14px;
+	margin-right: 15px;
+}
+
+.entry-meta > .posted-on::before {
+	content: "\f017";
+}
+
+.entry-meta > .byline::before {
+	content: "\f007";
+}
+
+.entry-footer .comments-link::before {
+	content: "\f075";
+}
+
+.entry-footer .tags-links::before {
+	content: "\f292";
+	font-weight: 600;
+}
+
+.entry-footer .cat-links::before {
+	content: "\f07c";
+}
+
+.entry-footer .edit-link::before {
+	content: "\f044";
+}
+
+.entry-meta .byline .author.vcard {
+	margin-left: -4px;
+}

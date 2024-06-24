@@ -1,0 +1,14 @@
+.comments-area {
+	margin: 10px 0;
+
+	label {
+		display: block;
+	}
+
+	textarea,
+	input[type="text"],
+	input[type="email"],
+	input[type="url"] {
+		width: 100%;
+	}
+}

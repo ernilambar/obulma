@@ -1,5 +1,12 @@
 @import "bulma";
 
 @import "./theme/variables.css";
-
+@import "./theme/typography.css";
+@import "./theme/accessibility.css";
+@import "./theme/core.css";
+@import "./theme/content.css";
+@import "./theme/comment.css";
+@import "./theme/navigation.css";
+@import "./theme/widget.css";
+@import "./theme/custom.css";
 @import "./theme/responsive.css";
