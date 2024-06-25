@@ -2,9 +2,40 @@
 	display: inline-block;
 }
 
+.site-title {
+	color: rgba(0, 0, 0, 0.7);
+
+	a {
+		color: inherit;
+	}
+}
+
+.site-description {
+	margin-bottom: 0;
+}
+
+.site-content {
+	padding-block: 24px;
+}
+
 .error404 .content-area {
 	padding: 20px;
 	margin-bottom: 20px;
+}
+
+.comments-area {
+	margin: 16px 0;
+
+	label {
+		display: block;
+	}
+
+	textarea,
+	input[type="text"],
+	input[type="email"],
+	input[type="url"] {
+		width: 100%;
+	}
 }
 
 .footer {

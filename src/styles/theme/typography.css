@@ -53,24 +53,3 @@ textarea {
 p {
 	margin-bottom: 1.5em;
 }
-
-a {
-	color: var(--bulma-link);
-}
-
-a:visited {
-	color: var(--bulma-link);
-}
-
-a:hover,
-a:active {
-	color: var(--bulma-link);
-	outline: 0;
-	text-decoration: none;
-}
-
-a:focus {
-	outline: thin;
-	outline-style: dotted;
-	text-decoration: underline;
-}
