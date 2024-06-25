@@ -9,7 +9,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://www.nilambar.net/2019/12/obulma-free-wordpress-theme.html
 
-A simple theme
+A simple blogging theme
 
 == Description ==
 
@@ -35,8 +35,9 @@ Obulma is distributed under the terms of the GNU GPL
 == Changelog ==
 
 = 2.0.0 - 25 Jun 2024 =
+* Significant revamp of theme code
 * Requirement: PHP 7.0; WP 6.0
-* Upgrade Bulma
+* Upgrade Bulma (Design slightly differ)
 * Update dependencies
 
 = 1.0.11 - Jun 2 2023 =
