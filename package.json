@@ -82,9 +82,9 @@
 		"pot": "composer run-script pot",
 		"version": "easy-replace-in-files",
 		"lint-pkg-json": "npmPkgJsonLint .",
-		"ready:build": "shx rm -rf build/ && pnpm run prod",
-		"ready:vendor": "shx rm -rf vendor/ && composer install --no-dev --no-scripts -o",
-		"predeploy": "pnpm run ready:vendor && pnpm run ready:build",
+		"vendor": "composer install --no-dev --no-scripts -o",
+		"clean": "shx rm -rf build/ && shx rm -rf vendor/",
+		"predeploy": "pnpm run clean && pnpm run vendor && pnpm run prod",
 		"deploy": "packtor",
 		"prewpdeploy": "pnpm run deploy",
 		"wpdeploy": "wp-deployer"
