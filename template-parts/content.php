@@ -34,7 +34,7 @@
 	<div class="entry-content content">
 		<?php the_excerpt(); ?>
 		<div class="more-link">
-			<a href="<?php the_permalink(); ?>" class="button is-info"><?php esc_html_e( 'Read More', 'obulma' ); ?></a>
+			<a href="<?php the_permalink(); ?>" class="button is-link"><?php esc_html_e( 'Read More', 'obulma' ); ?></a>
 		</div><!-- .more-link -->
 	</div><!-- .entry-content -->
 

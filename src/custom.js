@@ -1,4 +1,4 @@
-import './sass/custom.scss';
+import './styles/custom.css';
 
 /**
  * Handles toggling the navigation menu for small screens and enables TAB key

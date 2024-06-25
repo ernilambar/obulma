@@ -14,7 +14,7 @@
 			<input type="text" value="<?php the_search_query(); ?>" name="s" id="<?php echo esc_attr( 's' . $form_id ); ?>" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'obulma' ); ?>" class="input" /><span class="icon is-small is-left"><i class="fas fa-search"></i></span>
 		</div>
 		<div class="control">
-			<input type="submit" name="submit" value="<?php esc_attr_e( 'Search', 'obulma' ); ?>" class="button is-info" />
+			<input type="submit" name="submit" value="<?php esc_attr_e( 'Search', 'obulma' ); ?>" class="button is-link" />
 		</div>
 	</div>
 </form>

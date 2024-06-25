@@ -1,0 +1,16 @@
+:root {
+	--bulma-family-primary: "Nunito", sans-serif;
+	--bulma-family-secondary: "Nunito", sans-serif;
+
+	--bulma-size-1: 2.5rem;
+	--bulma-size-2: 2rem;
+	--bulma-size-3: 1.6rem;
+	--bulma-size-4: 1.4rem;
+	--bulma-size-5: 1.25rem;
+	--bulma-size-6: 1rem;
+	--bulma-size-7: 1rem;
+
+	--bulma-link-h: 217deg;
+	--bulma-link-s: 71%;
+	--bulma-link-l: 53%;
+}

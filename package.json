@@ -39,7 +39,7 @@
 		"extends": "@wordpress/npm-package-json-lint-config"
 	},
 	"dependencies": {
-		"bulma": "^0.9.4"
+		"bulma": "^1.0.1"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.24.7",
@@ -60,11 +60,11 @@
 		"npm-package-json-lint": "^8.0.0",
 		"packtor": "^1.0.2",
 		"postcss": "^8.4.38",
+		"postcss-import": "^16.1.0",
 		"postcss-loader": "^8.1.1",
+		"postcss-nested": "^6.0.1",
 		"postcss-preset-env": "^9.5.14",
 		"prettier": "npm:wp-prettier@^3.0.3",
-		"sass": "^1.77.6",
-		"sass-loader": "^14.2.1",
 		"shx": "^0.3.4",
 		"style-loader": "^4.0.0",
 		"uglifyjs-folder": "^3.3.0",
@@ -78,7 +78,7 @@
 		"prod": "pnpm run build && pnpm run minify:css && pnpm run minify:js",
 		"minify:css": "cleancss --batch --batch-suffix '.min' build/*.css",
 		"minify:js": "uglifyjs-folder build -eo build",
-		"format": "prettier --write \"src/**/*.{js,jsx,scss}\" webpack.config.js *.json",
+		"format": "prettier --write \"src/**/*.{js,jsx,css,scss}\" webpack.config.js *.json",
 		"pot": "composer run-script pot",
 		"version": "easy-replace-in-files",
 		"lint-pkg-json": "npmPkgJsonLint .",

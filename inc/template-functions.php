@@ -123,7 +123,7 @@ add_filter( 'comment_form_default_fields', 'obulma_customize_comment_form_fields
  * @return array Modified details.
  */
 function obulma_customize_comment_form( $defaults ) {
-	$defaults['class_submit']  = 'button is-info';
+	$defaults['class_submit']  = 'button is-link';
 	$defaults['comment_field'] = '<div class="field"><label for="comment" class="label">' . esc_html__( 'Comment', 'obulma' ) . '</label><div class="control"><textarea class="textarea" id="comment" name="comment" maxlength="65525" required="required"></textarea></div></div>';
 
 	return $defaults;
