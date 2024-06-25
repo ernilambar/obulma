@@ -14,6 +14,14 @@
 	margin-bottom: 10px;
 }
 
+.entry-content {
+	blockquote {
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
 .entry-meta span::before,
 .entry-footer span::before {
 	font-family: "Font Awesome 5 Free";
