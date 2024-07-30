@@ -92,17 +92,11 @@ import './styles/custom.css';
 
 				if ( ! menuItem.classList.contains( 'focus' ) ) {
 					e.preventDefault();
-					for (
-						i = 0;
-						i < menuItem.parentNode.children.length;
-						++i
-					) {
+					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
 						if ( menuItem === menuItem.parentNode.children[ i ] ) {
 							continue;
 						}
-						menuItem.parentNode.children[ i ].classList.remove(
-							'focus'
-						);
+						menuItem.parentNode.children[ i ].classList.remove( 'focus' );
 					}
 					menuItem.classList.add( 'focus' );
 				} else {
@@ -111,11 +105,7 @@ import './styles/custom.css';
 			};
 
 			for ( i = 0; i < parentLink.length; ++i ) {
-				parentLink[ i ].addEventListener(
-					'touchstart',
-					touchStartFn,
-					false
-				);
+				parentLink[ i ].addEventListener( 'touchstart', touchStartFn, false );
 			}
 		}
 	} )( container );
