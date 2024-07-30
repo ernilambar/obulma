@@ -48,10 +48,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 		} )
 			.then( ( res ) => res.json() )
 			.then( ( rawData ) => {
-				targetSelector.innerHTML = generateList(
-					rawData.data,
-					settings
-				);
+				targetSelector.innerHTML = generateList( rawData.data, settings );
 			} )
 			.catch( ( err ) => {
 				console.log( err );

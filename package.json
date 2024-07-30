@@ -17,7 +17,6 @@
 		"url": "https://github.com/ernilambar/obulma/issues"
 	},
 	"browserslist": "> 1%, not dead",
-	"prettier": "@wordpress/prettier-config",
 	"packtor": {
 		"files": [
 			"**/*",
@@ -65,7 +64,7 @@
 		"postcss-nested": "^6.0.1",
 		"postcss-preset-env": "^9.5.14",
 		"prettier": "npm:wp-prettier@^3.0.3",
-		"shx": "^0.3.4",
+		"rimraf": "^6.0.1",
 		"style-loader": "^4.0.0",
 		"uglifyjs-folder": "^3.3.0",
 		"webpack": "^5.92.1",
@@ -78,12 +77,12 @@
 		"prod": "pnpm run build && pnpm run minify:css && pnpm run minify:js",
 		"minify:css": "cleancss --batch --batch-suffix '.min' build/*.css",
 		"minify:js": "uglifyjs-folder build -eo build",
-		"format": "prettier --write \"src/**/*.{js,jsx,css,scss}\" webpack.config.js *.json",
+		"format": "prettier \"**/*.{cjs,css,js,json,mjs}\" --write",
 		"pot": "composer run-script pot",
 		"version": "easy-replace-in-files",
 		"lint-pkg-json": "npmPkgJsonLint .",
 		"vendor": "composer install --no-dev --no-scripts -o",
-		"clean": "shx rm -rf build/ && shx rm -rf vendor/",
+		"clean": "rimraf build deploy vendor",
 		"predeploy": "pnpm run clean && pnpm run vendor && pnpm run prod",
 		"deploy": "packtor",
 		"prewpdeploy": "pnpm run deploy",

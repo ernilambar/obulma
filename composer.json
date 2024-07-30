@@ -3,13 +3,14 @@
 	"description": "Obulma",
 	"license": "GPL-2.0-or-later",
 	"require": {
-		"php": ">=7.0",
-		"ernilambar/wp-admin-notice": "^1.0",
-		"ernilambar/wp-welcome": "^1.0",
+		"php": ">=7.2",
+		"ernilambar/wp-admin-notice": "^2.0",
+		"ernilambar/wp-welcome": "^2.0",
 		"wptt/webfont-loader": "^1.1"
 	},
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+		"php-parallel-lint/php-parallel-lint": "^1.4",
 		"phpcompatibility/phpcompatibility-wp": "^2.1",
 		"wp-cli/i18n-command": "^2.6",
 		"wp-coding-standards/wpcs": "^3.1"
@@ -23,8 +24,13 @@
 		"sort-packages": true
 	},
 	"scripts": {
+		"lint": [
+			"@lint-php",
+			"@phpcs"
+		],
+		"lint-php": "@php ./vendor/bin/parallel-lint --colors --exclude .git --exclude vendor --exclude node_modules --exclude deploy .",
 		"phpcbf": "@php ./vendor/bin/phpcbf --report-full --report-summary .",
 		"phpcs": "@php ./vendor/bin/phpcs --report-full --report-summary .",
-		"pot": "wp i18n make-pot . --exclude=build,deploy,node_modules,vendor --headers='{\"POT-Creation-Date\":\"\"}'"
+		"pot": "./vendor/bin/wp i18n make-pot . --exclude=build,deploy,node_modules,vendor --headers='{\"POT-Creation-Date\":\"\"}'"
 	}
 }
