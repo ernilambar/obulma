@@ -1,6 +1,6 @@
 {
 	"name": "obulma",
-	"version": "2.0.0",
+	"version": "3.0.0",
 	"description": "Simple theme based on Bulma.",
 	"author": "Nilambar Sharma",
 	"license": "GPL-2.0-or-later",
@@ -31,7 +31,7 @@
 		"repoType": "theme",
 		"username": "rabmalin",
 		"buildDir": "deploy/obulma",
-		"earlierVersion": "1.0.11",
+		"earlierVersion": "2.0.0",
 		"deployAssets": false
 	},
 	"npmpackagejsonlint": {

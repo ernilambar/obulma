@@ -3,8 +3,8 @@
 Contributors: rabmalin
 Requires at least: 6.0
 Tested up to: 6.6
-Requires PHP: 7.0
-Stable tag: 2.0.0
+Requires PHP: 7.2
+Stable tag: 3.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://www.nilambar.net/2019/12/obulma-free-wordpress-theme.html
@@ -34,6 +34,10 @@ Obulma is distributed under the terms of the GNU GPL
 
 == Changelog ==
 
+= 3.0.0 - 30 Jul 2024 =
+* Requirement: PHP 7.2; WP 6.0
+* Update dependencies
+
 = 2.0.0 - 25 Jun 2024 =
 * Significant revamp of theme code
 * Requirement: PHP 7.0; WP 6.0
@@ -45,27 +49,6 @@ Obulma is distributed under the terms of the GNU GPL
 
 = 1.0.10 - Feb 12 2023 =
 * Fix PHP notice
-
-= 1.0.9 - Dec 22 2022 =
-* Fix styling issues
-
-= 1.0.8 - Oct 12 2022 =
-* Fix links
-
-= 1.0.7 - Sep 4 2022 =
-* Fix skip link
-
-= 1.0.6 - Jul 4 2022 =
-* Minor bug fixes
-
-= 1.0.5 - Jun 23 2022 =
-* WP 6.0 compatibility
-
-= 1.0.4 - May 26 2020 =
-* Minor bug fixes
-
-= 1.0.3 - Dec 14 2019 =
-* Minor bug fixes
 
 = 1.0.1 - Aug 24 2019 =
 * Minor bug fixes
